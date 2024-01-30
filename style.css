@@ -4,9 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+    
 html {
-    font-size: 12px;
+    font-size: 11pt;
+    overflow-x: hidden;
 
 }
 
@@ -17,7 +18,8 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-
+    position: fixed;
+    z-index: 2;
 }
 
 .container header {
@@ -48,16 +50,19 @@ nav > ul {
   }
 
     
-#header-top {
+#header-top { 
+    display: flex;
     width: 100%;
     height: 50px;
     background-color: #292346;
-    display: flex;
     justify-content: center;
+    align-items: center;
     position: fixed;
-    top: 0;
-    margin-left: 0;
+    }
+.titulo-header {
     color: white;
+    font-size: 11pt;
+    font-family: directv_curvemedium;
     }
 
     #nav-section {
@@ -68,16 +73,25 @@ nav > ul {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 2;
     top: 0;
     margin-top: 50px;
     padding: 30px 100px;
-    }    
+    }  
+    .tel-up {
+        text-decoration: none;
+        color: #ffc60b;
+        background-color: transparent;
+        font-family: directv_curvemedium;
+    }  
 
     nav > ul > li {
         color: #dfdfe2;
+        background-color: transparent;
         margin: 0 0.2rem;
         padding: 0.2rem;
         display: block;
+        font-family: directv_curvemedium;
       }
 
       nav > ul > li:hover {
@@ -90,10 +104,32 @@ nav > ul {
       li > a {
         color: inherit;
         text-decoration: none;
+        background-color: transparent;
+      }
+      .hero {
+        background-image: url(img/hero_background.jpg);
+        position: relative;
+      }
+      .phone-hecho {
+        position: relative;
+        float: left;
+   
+
+
       }
 
       #futbol {
         background-image: url(img/futbol-banner2.jpg);
         height: 500px;    
        margin: auto;
+    }
+    p {
+        font-family: directv_curveregular, sans-serif;
+        text-align: center;
+        background-color: transparent;
+    }
+
+    h2 {
+        font-family: directv_curvebold, sans-serif;
+        background-color: transparent;
     }
