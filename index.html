@@ -1,98 +1,101 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="DirectTV Agente Autorizado" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DirectTV Agente Autorizado">
     <title>DIRECTV Argentina | Agente Autorizado</title>
-    <link href='style.css' rel='stylesheet' type='text/css' />
-   
-
+    <link href='style.css' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
         <div class="container">
             <header>
               <div id="header-top">
-              <p>COMUNICATE CON NUESTRO TELÉFONO DE VENTAS | <a href="tel:+5491178310764" class="tel-up">+54 9 11 7831-0764</a></p>
-              </div>
+                <p class="titulo-header">COMUNICATE CON NUESTRO TELÉFONO DE VENTAS | <a href="tel:+5491178310764" class="tel-up">+54 9 11 7831-0764</a></p>
+              </div> 
                 
-                <div id="nav-section">
-                <img id="logo" src="img/LogoDTVa_a.png" alt="logo DirectTV Agente Autorizado">
-             
-                <nav id="nav-bar">
-                  <ul>
-                   <li><a href="#" class="#inicio-btn">INICIO</a></li>
-                   <li><a href="#formulario" class="#dtv-btn">DIRECTV</a></li>
-                   <li><a href="#premium" class="#premium-btn">PREMIUM</a></li>
-                   <li><a href="" class="contacto-btn">CONTACTO</a></li>
-                   <li><a href="" class="tel">+54 9 11 7831-0764</a></li>
-                  </ul>
-                </nav>
+              <div id="nav-section">
+                    <img id="logo" src="img/LogoDTVa_a.png" alt="logo DirectTV Agente Autorizado">
+                       
+                    <nav id="nav-bar">
+                        <ul>
+                            <li><a href="#" class="#inicio-btn">INICIO</a></li>
+                            <li><a href="#formulario" class="#dtv-btn">DIRECTV</a></li>
+                            <li><a href="#premium" class="#premium-btn">PREMIUM</a></li>
+                            <li><a href="" class="contacto-btn">CONTACTO</a></li>
+                            <li><a href="" class="tel">+54 9 11 7831-0764</a></li>
+                        </ul>
+                    </nav>
                 </div>
-
             </header>
-   
-   
-    <main>
+        </div>
+    
+        <main>
         <!--SECCIÓN HERO-->
-        <section id="hero">
-            <img src="img/hero_background.jpg" alt="fondo-azul">
+        <section class="hero">
+                <img src="img/phone-hecho.png" alt="hecho" class="phone-hecho">
         </section>
 
         <!--SECCIÓN FORMULARIO-->
-        <section id="formulario">
-            <h2>¿Querés DIRECTV en tu casa?</h2>
-            <p class="subtitle">Adquirilo hoy mismo.</p>
-            <p>Llená el siguiente formulario, y un agente se pondrá en contacto para asesorarte a la brevedad.</p>      
+        <section class="formulario">
+            <h2 class="titulo-formulario">¿Querés DIRECTV en tu casa?</h2>
+            <p class="subtitulo-formulario">Adquirilo hoy mismo.</p>
+            <p class="parrafo-formulario">Llená el siguiente formulario, y un agente se pondrá en contacto para asesorarte a la brevedad.</p>      
 
-            <form action="" method="post">
+            <form class="form" action="" method="post">
                 <div class="info">
                     <label for="lead-name"></label>
-                    <input type="text" name="lead-name" id="lead-name" placeholder="NOMBRE COMPLETO" required />
+                    <input type="text" name="lead-name" id="lead-name" placeholder="NOMBRE COMPLETO" required>
                 </div>
 
                 <div class="info">
                     <label for="lead-email"></label>
-                    <input type="email" name="lead-email" id="lead-email" placeholder="CORREO ELECTRÓNICO" required />
+                    <input type="email" name="lead-email" id="lead-email" placeholder="CORREO ELECTRÓNICO" required>
                 </div>
                 
                 <div class="info">
                     <label for="lead-tel"></label>
-                    <input type="tel" name="tel-email" id="lead-tel" placeholder="TELÉFONO" required />
+                    <input type="tel" name="tel-email" id="lead-tel" placeholder="TELÉFONO" required>
                 </div>
-                
-                <input type="submit" name="submit" id="btn-enviar" />
-                </form>
+                <button>Enviar</button>
+            </form>
+            <div class="autorizacion">
                 <p>Autorizo que me contacten.</p>
                 <p>Al enviar tus datos, aceptás los términos y condiciones del sitio web así como su política de tratamientos de datos.</p>
+            </div>
         </section>
 
         <!--SECCIÓN PREMIUM-->
-        <section id="premium">
-            <h2>Con DIRECTV, tenés todo.</h2>
-            <p class="subtitle">Complementá tu abono con tus PREMIUMS favoritos.</p>
-            <p>Disfrutá del contenido exclusivo de DIRECTV, desde la comodidad de tu casa.</p>      
+        <section class="premium">
+            <h2 class="titulo-premium">Con DIRECTV, tenés todo.</h2>
+            <p class="subtitulo-premium">Complementá tu abono con tus PREMIUMS favoritos.</p>
+            <p class="parrafo-premium">Disfrutá del contenido exclusivo de DIRECTV, desde la comodidad de tu casa.</p>      
         </section>
 
          <!--SECCIÓN FÚTBOL-->
-         <section id="futbol">
-            <h2>Con PACK FÚTBOL ves todos los partidos online en DGO</h2>
-            <p class="subtitle">¡Llevá tu pasión con vos, siguiendo las mejores ligas del deporte mundial!</p>
-            <button id="contactar">Contactar</button>
+        <section class="futbol">
+            <h2 class="titulo-futbol">Con PACK FÚTBOL ves todos los partidos online en DGO</h2>
+            <p class="subtitulo-futbol">¡Llevá tu pasión con vos, siguiendo las mejores ligas del deporte mundial!</p>
+            <button class="contactar">Contactar</button>
         </section>
 
-        <section id="cta-final">
-            <h2>¡Contratá tu plan ahora!</h2>
-            <p class="subtitle">Comenzá a disfrutar de la evolución de la TV online en todas tus pantallas.</p>
+        <section class="cuenta-final">
+            <h2 class="titulo-cuenta-final">¡Contratá tu plan ahora!</h2>
+            <p class="subtitulo-cuenta-final">Comenzá a disfrutar de la evolución de la TV online en todas tus pantallas.</p>
         </section>
     </main>
 
-    <footer>
-    </footer>
+        <footer class="pie-pagina">
+            <p class="terminos-condiciones"><a href="">TÉRMINOS y CONDICIONES |</a><a href="">POLÍTICAS DE PRIVACIDAD</a></p>
+            <p class="copy">&#169; 2024. Agente Autorizado - Todos los derechos reservados.</p>
+        </footer>
       
     </body>
 
