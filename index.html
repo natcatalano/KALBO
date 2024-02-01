@@ -5,42 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="DirectTV Agente Autorizado">
     <title>DIRECTV Argentina | Agente Autorizado</title>
-    <link href='style.css' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="./fonts/stylesheet.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
-        <div class="container">
-            <header>
-              <div id="header-top">
+        <header>
+            <div class="header-top">
                 <p class="titulo-header">COMUNICATE CON NUESTRO TELÉFONO DE VENTAS | <a href="tel:+5491178310764" class="tel-up">+54 9 11 7831-0764</a></p>
-              </div> 
+            </div> 
                 
-              <div id="nav-section">
-                    <img id="logo" src="img/LogoDTVa_a.png" alt="logo DirectTV Agente Autorizado">
-                       
-                    <nav id="nav-bar">
-                        <ul>
-                            <li><a href="#" class="#inicio-btn">INICIO</a></li>
-                            <li><a href="#formulario" class="#dtv-btn">DIRECTV</a></li>
-                            <li><a href="#premium" class="#premium-btn">PREMIUM</a></li>
-                            <li><a href="" class="contacto-btn">CONTACTO</a></li>
-                            <li><a href="" class="tel">+54 9 11 7831-0764</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-        </div>
-    
+            <nav class="nav-section">
+                <img class="logo" src="./img/LogoDTVa_a.png" alt="logo DirectTV Agente Autorizado">
+                    <ul class="navegacion">
+                        <li class="link-navegacion"><a class="boton-navegacion" href="#">INICIO</a></li>
+                        <li class="link-navegacion"><a class="boton-navegacion" href="#">DIRECTV</a></li>
+                        <li class="link-navegacion"><a class="boton-navegacion" href="#">PREMIUM</a></li>
+                        <li class="link-navegacion"><a class="boton-navegacion" href="#">CONTACTO</a></li>
+                        <li class="link-navegacion"><a class="boton-navegacion" href="#">+54 9 11 7831-0764</a></li>
+                    </ul>
+            </nav>
+        </header>
+
         <main>
         <!--SECCIÓN HERO-->
         <section class="hero">
-                <img src="img/phone-hecho.png" alt="hecho" class="phone-hecho">
+                <img src="./img/phone-hecho.png" alt="hecho" class="phone-hecho">
+                <div class="cuadro-fondo-combo"></div>
+                <div class="cuadro-hero">
+                    <h4 class="publi-combo">CON DIRECTV TENÉS TODO</h4>
+                    <h4 class="sub-combo">CONTRATÁ</h4>
+                    <h1 class="combo">ORO HD COMBO+</h1>
+                    <h2 class="descuento-combo">CON 55% DE DESCUENTO</h2>
+                    <h4 class="duracion-combo">POR 6 MESES</h4>
+                    <p class="descripcion-combo">STAR+,DISNEY+ Y DGO <br> INCLUÍDOS SIN COSTO ADICIONAL</P>
+                    <div class="tarjetas">
+                        <div class="tarjeta-combo"></div>
+                        <div class="tarjeta-combo"></div>
+                        <div class="tarjeta-combo"></div>    
+                    </div>
+                    <button class="boton-combo">CONTRATAR</button>
+                </div>
         </section>
 
         <!--SECCIÓN FORMULARIO-->
@@ -49,7 +58,7 @@
             <p class="subtitulo-formulario">Adquirilo hoy mismo.</p>
             <p class="parrafo-formulario">Llená el siguiente formulario, y un agente se pondrá en contacto para asesorarte a la brevedad.</p>      
 
-            <form class="form" action="" method="post">
+            <form action="" method="post">
                 <div class="info">
                     <label for="lead-name"></label>
                     <input type="text" name="lead-name" id="lead-name" placeholder="NOMBRE COMPLETO" required>
@@ -64,11 +73,10 @@
                     <label for="lead-tel"></label>
                     <input type="tel" name="tel-email" id="lead-tel" placeholder="TELÉFONO" required>
                 </div>
-                <button>Enviar</button>
+                <button class="btn-form">Enviar</button>
             </form>
             <div class="autorizacion">
-                <p>Autorizo que me contacten.</p>
-                <p>Al enviar tus datos, aceptás los términos y condiciones del sitio web así como su política de tratamientos de datos.</p>
+                <p class="texto-autorizacion">Autorizo que me contacten. Al enviar tus datos, aceptás los términos y condiciones del sitio web así como su política de tratamientos de datos.</p>
             </div>
         </section>
 
