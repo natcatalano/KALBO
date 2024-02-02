@@ -3,16 +3,17 @@
     padding: 0;
     overflow-x: hidden;
 }
+/*SECCION HEADER*/
 .header-top {
-display: flex;
-flex-direction: column;
-position: fixed;
-width: 100%;
-height: 50px;
-justify-content: center;
-align-items: center;
-background-color: #012169;
-z-index: 2;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #012169;
+    z-index: 2;
 }
 .titulo-header {
     color: white;
@@ -20,11 +21,12 @@ z-index: 2;
     font-size: 11pt;
 }
 .tel-up{
-color: #ffc60b;
-font-family: directv_curvemedium;
-font-size: 11pt;
-text-decoration: none;
+    color: #ffc60b;
+    font-family: directv_curvemedium;
+    font-size: 11pt;
+    text-decoration: none;
 }
+/*SECCIÓN NAVEGACION*/
 .nav-section {
     position: fixed;
     display: flex;
@@ -69,12 +71,12 @@ text-decoration: none;
 .boton-navegacion:hover {
     color: #00acfb;
 }
+/*SECCION HERO*/
 .hero {
     background-image: url(hero_background.jpg);
     width: 100%;
     height: 650px;
     z-index: -2;
-    
 }
 .phone-hecho {
     display: flex;
@@ -108,24 +110,24 @@ text-decoration: none;
     color: white;
 }
 .combo {
-font-family: directv_curvebold;
-font-size: 30pt;
-color: white;
+    font-family: directv_curvebold;
+    font-size: 30pt;
+    color: white;
 }
 .descuento-combo {
-font-family: directv_curvebold;
-font-size: 18pt;
-color: #ffc60b;
+    font-family: directv_curvebold;
+    Font-size: 18pt;
+    color: #ffc60b;
 }
 .duracion-combo {
-font-family: poppins;
-font-size: 12pt;
-color: white;
+    font-family: poppins;
+    font-size: 12pt;
+    Color: white;
 }
 .descripcion-combo {
-font-family: poppins;
-font-size: 12pt;
-color: white;
+    font-family: poppins;
+    font-size: 12pt;
+    color: white;
 }
 .tarjetas {
     display: flex;
@@ -170,6 +172,7 @@ color: white;
     opacity: 0.6;
     position: absolute; right: 160px; top: 110px;
 }
+/*SECCION FORMULARIO*/
 .formulario {
     display: flex;
     flex-direction: column;
@@ -181,19 +184,19 @@ color: white;
     background-size: cover;
 }
 .titulo-formulario {
- color: white;
- font-family: directv_curvebold;
- font-size: 36pt;
+    color: white;
+    font-family: directv_curvebold;
+    font-size: 36pt;
 }
 .subtitulo-formulario {
-font-family: directv_curveregular;
-font-size: 24pt;
-color: white;
+    font-family: directv_curveregular;
+    font-size: 24pt;
+    color: white;
 }
 .parrafo-formulario {
-font-family: directv_curveregular;
-font-size: 12pt;
-color: white;
+    font-family: directv_curveregular;
+    font-size: 12pt;
+    color: white;
 }
 form {
     margin: 1rem;
@@ -211,8 +214,9 @@ input {
     justify-content: center;
     text-align: center;
     width: 400px;
-    height: 40px;
-    border-radius: 20px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
 }
 .btn-form {
     font-family: directv_curvebold;
@@ -223,10 +227,100 @@ input {
     background-color: #ffc60b;
     width: 200px;
     height: 60px;
+    border: none;
     border-radius: 30px;
+}
+.btn-form:hover {
+    color: white;
+    background-color: #012169;
 }
 .autorizacion {
     font-family: directv_curveregular;
     font-size: 9pt;
     color: white;
+}
+/*SECCION PREMIUM*/
+.premium {
+
+}
+/*SECCION CUENTA*/
+.cuenta-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+.titulo-cuenta-final {
+    color: #012169;
+    font-family: directv_curvebold;
+    font-size: 36pt;
+}
+.subtitulo-cuenta-final {
+    color: #012169;
+    font-family: directv_curveregular;
+    font-size: 24pt;
+    margin: 10px;
+}
+.botones-cuenta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.boton-0800 {
+    font-family: poppins;
+    font-size: 15pt;
+    color: white;
+    background-color: #ffc60b;
+    width: 300px;
+    height: 50px;
+    margin-top: 50px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 25px;
+}
+.boton-0800:hover {
+    color: #ffc60b;
+    background-color: #012169;
+}
+.boton-quiero {
+    font-family: poppins;
+    font-size: 15pt;
+    color: white;
+    background: linear-gradient(90deg, #00acfb, #012169);
+    width: 300px;
+    height: 50px;
+    margin-top: 50px;
+    border: none;
+    border-radius: 25px;
+}
+.logo-cuenta {
+    width: 150px;
+    height: auto;
+    margin-top: 80px;
+}
+/*SECCION FOOTER*/
+.pie-pagina {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    color: white;
+    background-color: #4A235A;
+}
+.terminos-condiciones {
+    text-decoration: none;
+    color: white;
+    font-family: poppins;
+    font-size: 9pt;
+}
+.copy {
+    color: white;
+    font-family: poppins;
+    font-size: 9pt;
 }
