@@ -22,7 +22,7 @@
 }
 .tel-up{
     color: #ffc60b;
-    font-family: directv_curvemedium;
+    font-family: 'poppins', sans-serif;
     font-size: 11pt;
     text-decoration: none;
 }
@@ -36,7 +36,7 @@
     justify-content: space-around;
     width: 100%;
     height: 100px;
-    background-color: #1b1b32;
+    background-color: #000;
     z-index: 2;
 }
 .logo {
@@ -71,18 +71,27 @@
 .boton-navegacion:hover {
     color: #00acfb;
 }
+.boton-telefono {
+    font-family: 'poppins', sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 15px 10px;
+    color: #ffc60b;
+    background-color: transparent;
+}
 /*SECCION HERO*/
 .hero {
     background-image: url(hero_background.jpg);
+    background-size: cover;
     width: 100%;
     height: 650px;
-    z-index: -2;
 }
 .phone-hecho {
     display: flex;
-    position: relative; left: 120px; top: 220px;
+    position: relative; left: 8%; top: 220px;
     width: auto;
-    height: 300px;
+    height: 350px;
 }  
 .cuadro-hero {
     display: flex;
@@ -90,9 +99,7 @@
     float: right;
     width: 350px;
     height: 510px;
-    gap: 8px;
-    padding: 5px;
-    margin: 10px;
+    padding: 12px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -100,68 +107,79 @@
     overflow-y: hidden;
 }
 .publi-combo {
-    font-family: poppins;
-    font-size: 12pt;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
     color: #00acfb;
 }
 .sub-combo {
-    font-family: poppins;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
     font-size: 12pt;
     color: white;
 }
 .combo {
-    font-family: directv_curvebold;
+    font-family: 'directv_curvebold';
     font-size: 30pt;
     color: white;
 }
 .descuento-combo {
-    font-family: directv_curvebold;
-    Font-size: 18pt;
+    font-family: 'directv_curvebold';
+    Font-size: 20pt;
     color: #ffc60b;
 }
 .duracion-combo {
-    font-family: poppins;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
     font-size: 12pt;
     Color: white;
+    margin-bottom: 10px;
+}
+.linea-hero {
+    justify-content: center;
+    width: 120px;
+    border-color: #00acfb;
 }
 .descripcion-combo {
-    font-family: poppins;
+    font-family: 'poppins', sans-serif;
     font-size: 12pt;
     color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .tarjetas {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    overflow-y: hidden;
 }
 .tarjeta-combo {
+    justify-content: center;
+    align-items: center;
     width: 60px;
     height: 60px;
-    border:  5px #012169 solid;
+    border:  2px #012169 solid;
     border-radius: 10px;
-    background-color: #012169;
 }
 .boton-combo {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
     border: none;
-    outline: none;
-    color: rgb(255 255 255);
-    font-family: poppins;
     font-size: 12pt;
     font-weight: 500;
     text-transform: uppercase;
+    margin-top: 10px;
     padding: 0.75rem 1.5rem;
-    background-color: rgb(33 150 243);
+    background-color: #00ADEE;
     border-radius: 25px;
     width: 60%;
-    text-shadow: 0px 4px 18px #2c3442;
 }
 .boton-combo:hover {
     color: #012169;
-    background-color: #ffc60b;
-    cursor: pointer;
+    background: linear-gradient(0deg, #B98E00, #ffc60b)
+}
+.link-combo {
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    color: white;
 }
 .cuadro-fondo-combo {
     border: 5px #012169 solid;
@@ -169,7 +187,7 @@
     width: 350px;
     height: 530px;
     background-color: #012169;
-    opacity: 0.6;
+    opacity: 0.4;
     position: absolute; right: 160px; top: 110px;
 }
 /*SECCION FORMULARIO*/
@@ -243,6 +261,62 @@ input {
 .premium {
 
 }
+/*SECCION FUTBOL*/
+.futbol {
+background-image: url(./img/futbol-banner.png);
+width: 100%;
+height: 500px;
+}
+.uefa-futbol {
+    float: left;
+    position: absolute; left: 200px; top: 1320px;
+    width: 300px;
+    height: auto;
+}
+.descripcion-futbol {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    position: absolute; right: 120px; top: 1320px;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-futbol {
+    font-family: directv_curvebold;
+    text-align: center;
+    font-size: 24pt;
+    color: white;
+}
+.linea-futbol {
+    border-color: #00acfb;
+    width: 120px;
+    margin: 20px 0 20px 0;
+}
+.subtitulo-futbol {
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    text-align: center;
+    color: white;
+}
+.contactar {
+    font-family: 'poppins', sans-serif;
+    font-size: 15pt;
+    width: 250px;
+    height: 50px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    background: linear-gradient(90deg, #00ADEE, #012169);
+}
+.contactar:hover {
+    background: linear-gradient(0deg, #012169, #00ADEE);
+}
+.link-contactar {
+    text-decoration: none;
+    color: white;
+}
 /*SECCION CUENTA*/
 .cuenta-final {
     display: flex;
@@ -251,6 +325,8 @@ input {
     align-items: center;
     width: 100%;
     height: 500px;
+    background-image: url(./img/puntos.png);
+    background-repeat: no-repeat;
 }
 .titulo-cuenta-final {
     color: #012169;
@@ -270,9 +346,6 @@ input {
     align-items: center;
 }
 .boton-0800 {
-    font-family: poppins;
-    font-size: 15pt;
-    color: white;
     background-color: #ffc60b;
     width: 300px;
     height: 50px;
@@ -281,20 +354,36 @@ input {
     border: none;
     border-radius: 25px;
 }
+.link-0800 {
+    font-family: 'poppins', sans-serif;
+    font-size: 15pt;
+    text-decoration: none;
+    color: white;
+}
 .boton-0800:hover {
-    color: #ffc60b;
-    background-color: #012169;
+    color: white;
+    background: linear-gradient(0deg, #B98E00, #ffc60b);
 }
 .boton-quiero {
     font-family: poppins;
     font-size: 15pt;
     color: white;
-    background: linear-gradient(90deg, #00acfb, #012169);
+    background: linear-gradient(90deg, #00ADEE, #012169);
     width: 300px;
     height: 50px;
     margin-top: 50px;
     border: none;
     border-radius: 25px;
+}
+.link-quiero {
+    font-family: 'poppins', sans-serif;
+    font-size: 15pt;
+    text-decoration: none;
+    color: white;
+}
+.boton-quiero:hover {
+    color: white;
+    background: linear-gradient(0deg, #012169, #00ADEE)
 }
 .logo-cuenta {
     width: 150px;
@@ -311,7 +400,7 @@ input {
     align-content: center;
     align-items: center;
     color: white;
-    background-color: #4A235A;
+    background-color: #000;
 }
 .terminos-condiciones {
     text-decoration: none;
