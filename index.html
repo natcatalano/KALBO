@@ -22,18 +22,18 @@
             <nav class="nav-section">
                 <img class="logo" src="./img/LogoDTVa_a.png" alt="logo DirectTV Agente Autorizado">
                     <ul class="navegacion">
-                        <li class="link-navegacion"><a class="boton-navegacion" href="#">INICIO</a></li>
-                        <li class="link-navegacion"><a class="boton-navegacion" href="#">DIRECTV</a></li>
-                        <li class="link-navegacion"><a class="boton-navegacion" href="#">PREMIUM</a></li>
-                        <li class="link-navegacion"><a class="boton-navegacion" href="#">CONTACTO</a></li>
-                        <li class="link-navegacion"><a class="boton-navegacion" href="#">+54 9 11 7831-0764</a></li>
+                        <li class="link-navegacion"><a class="boton-navegacion" href="#hero">INICIO</a></li>
+                        <li class="link-navegacion"><a class="boton-navegacion" href="#cuenta-final">DIRECTV</a></li>
+                        <li class="link-navegacion"><a class="boton-navegacion" href="#premium">PREMIUM</a></li>
+                        <li class="link-navegacion"><a class="boton-navegacion" href="#formulario">CONTACTO</a></li>
+                        <li class="link-navegacion"><a class="boton-telefono" href="#">+54 9 11 7831-0764</a></li>
                     </ul>
             </nav>
         </header>
 
         <main>
         <!--SECCIÓN HERO-->
-        <section class="hero">
+        <section class="hero" id="hero">
                 <img src="./img/phone-hecho.png" alt="hecho" class="phone-hecho">
                 <div class="cuadro-fondo-combo"></div>
                 <div class="cuadro-hero">
@@ -42,18 +42,19 @@
                     <h1 class="combo">ORO HD COMBO+</h1>
                     <h2 class="descuento-combo">CON 55% DE DESCUENTO</h2>
                     <h4 class="duracion-combo">POR 6 MESES</h4>
+                    <hr class="linea-hero">
                     <p class="descripcion-combo">STAR+,DISNEY+ Y DGO <br> INCLUÍDOS SIN COSTO ADICIONAL</P>
                     <div class="tarjetas">
-                        <div class="tarjeta-combo"></div>
-                        <div class="tarjeta-combo"></div>
-                        <div class="tarjeta-combo"></div>    
+                        <img class="tarjeta-combo" src="./img/star.png" alt="star">
+                        <img class="tarjeta-combo" src="./img/disney.png" alt="disney">
+                        <img class="tarjeta-combo" src="./img/dgo.png" alt="dgo"> 
                     </div>
-                    <button class="boton-combo">CONTRATAR</button>
+                    <button class="boton-combo"><a class="link-combo" href="#formulario">CONTRATAR</a></button>
                 </div>
         </section>
 
         <!--SECCIÓN FORMULARIO-->
-        <section class="formulario">
+        <section class="formulario" id="formulario">
             <h2 class="titulo-formulario">¿Querés DIRECTV en tu casa?</h2>
             <p class="subtitulo-formulario">Adquirilo hoy mismo.</p>
             <p class="parrafo-formulario">Llená el siguiente formulario, y un agente se pondrá en contacto para asesorarte a la brevedad.</p>      
@@ -80,7 +81,7 @@
         </section>
 
         <!--SECCIÓN PREMIUM-->
-        <section class="premium">
+        <section class="premium" id="premium">
             <h2 class="titulo-premium">Con DIRECTV, tenés todo.</h2>
             <p class="subtitulo-premium">Complementá tu abono con tus PREMIUMS favoritos.</p>
             <p class="parrafo-premium">Disfrutá del contenido exclusivo de DIRECTV, desde la comodidad de tu casa.</p>      
@@ -88,18 +89,22 @@
 
          <!--SECCIÓN FÚTBOL-->
         <section class="futbol">
-            <h2 class="titulo-futbol">Con PACK FÚTBOL ves todos los partidos online en DGO</h2>
-            <p class="subtitulo-futbol">¡Llevá tu pasión con vos, siguiendo las mejores ligas del deporte mundial!</p>
-            <button class="contactar">Contactar</button>
+            <img class="uefa-futbol" src="./img/uefa.png" alt="uefa">
+            <div class="descripcion-futbol">
+                <h2 class="titulo-futbol">Con PACK FÚTBOL ves todos los <br> partidos online en DGO</h2>
+                <hr class="linea-futbol">
+                <p class="subtitulo-futbol">¡Llevá tu pasión con vos, siguiendo las mejores ligas del deporte<br>mundial!</p>
+                <button class="contactar"><a class="link-contactar" href="#formulario">Contactar</a></button>
+            </div>
         </section>
 
         <!--SECCÍON CUENTA-->
-        <section class="cuenta-final">
+        <section class="cuenta-final" id="cuenta-final">
             <h2 class="titulo-cuenta-final">¡Contratá tu plan ahora!</h2>
             <p class="subtitulo-cuenta-final">Comenzá a disfrutar de la evolución de la TV online en todas tus pantallas.</p>
             <div class="botones-cuenta">
-                <button class="boton-0800">0810-000-0000</button>
-                <button class="boton-quiero">Quiero que me llamen</button>
+                <button class="boton-0800"><a class="link-0800" href="#">+54 9 117831-0764</a></button>
+                <button class="boton-quiero"><a class="link-quiero" href="#formulario">Quiero que me llamen</a></button>
             </div>
             <img class="logo-cuenta" src="./img/LogoDTVa_a.png" alt="logo_dtv">   
         </section>
