@@ -259,17 +259,81 @@ input {
 }
 /*SECCION PREMIUM*/
 .premium {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+.titulo-premium {
+    color: #000;
+    font-family: directv_curvebold;
+    font-size: 36pt;
+}
+.subtitulo-premium {
+    color: #000;
+    font-family: 'poppins', sans-serif;
+    font-size: 24pt;
+}
+.parrafo-premium {
+    color: #00ADEE;
+    font-family: 'poppins',sans-serif;
+    font-size: 14pt;
+}
+.listas-packs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 30px;
+}
+.btn-premium {
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+.btn-premium:hover {
+    background: linear-gradient(90deg, #00ADEE, #012169);
+}
+.lista-series {
+    color: white;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+}
+.lista-mundo {
+    color: white;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+}
+.lista-deportes {
+    color: white;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+}
+.lista-adultos {
+    color: white;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
 }
 /*SECCION FUTBOL*/
 .futbol {
-background-image: url(./img/futbol-banner.png);
-width: 100%;
-height: 500px;
+    background-image: url(./img/futbol-banner.png);
+    width: 100%;
+     height: 500px;
 }
 .uefa-futbol {
     float: left;
-    position: absolute; left: 200px; top: 1320px;
+    position: relative; left: 200px; top: 120px;
     width: 300px;
     height: auto;
 }
@@ -277,7 +341,7 @@ height: 500px;
     display: flex;
     flex-direction: column;
     float: right;
-    position: absolute; right: 120px; top: 1320px;
+    position: relative; right: 120px; top: 120px;
     justify-content: center;
     align-items: center;
 }
