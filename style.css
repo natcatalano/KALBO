@@ -310,14 +310,13 @@ input {
     align-items: start;
     display: flex;
     flex-direction: column;
-    height: 300px;
+    width: 800px;
+    height: 350px;
     justify-content: center;
 }  
 .wrapper {
     display: flex;
-    grid-gap: 1em;
     overflow: hidden;
-    width: 200em;
 }
 .inner {
     display: flex;
@@ -327,14 +326,14 @@ input {
 .card {
     align-content: center;
     align-items: center;
-    width: 500px;
+    width: 240px;
     height: 300px;
     background: linear-gradient(0deg, #000, #012169);
     border-radius: 0.5em;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     overflow: hidden;
 } 
-.content {
+.contenido {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -347,7 +346,7 @@ input {
 .img-tarjeta {
     width: auto;
     height: 60px;
-    margin: 10px;
+    margin: 5px;
 }
 .titulo-tarjeta {
     font-family: directv_curvebold;
@@ -364,13 +363,13 @@ input {
     display: flex;
     border-color: #00ADEE;
     width: 80px;
-    margin: 10px;
+    margin: 5px;
 }
 .parrafo-tarjeta {
     color: #fff;
     font-family: 'poppins', sans-serif;
     font-size: 8pt;
-    margin: 10px;
+    margin: 5px;
 }
 .btn-tarjeta {
     display: flex;
@@ -384,7 +383,7 @@ input {
     background: linear-gradient(90deg, #012169, #00ADEE);
     border: none;
     border-radius: 25px;
-    margin: 10px;
+    margin: 5px;
 }
 .btn-tarjeta:hover {
     background: linear-gradient(0deg, #012169, #00ADEE);

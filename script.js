@@ -7,16 +7,16 @@ buttonsWrapper.addEventListener("click", e => {
       item.classList.remove("active")
     );
     if (e.target.classList.contains("first")) {
-      slides.style.transform = "translateX(33%)";
+      slides.style.transform = "translateX(1.2%)";
       e.target.classList.add("active");
     } else if (e.target.classList.contains("second")) {
-      slides.style.transform = "translateX(-0%)";
+      slides.style.transform = "translateX(-24.3%)";
       e.target.classList.add("active");
     } else if (e.target.classList.contains("third")){
-      slides.style.transform = 'translatex(-25%)';
+      slides.style.transform = 'translatex(-49.5%)';
       e.target.classList.add('active');
     } else if (e.target.classList.contains("four")){
-        slides.style.transform = 'translatex(-35%)';
+        slides.style.transform = 'translatex(-74.9%)';
         e.target.classList.add('active');
     }
   }
