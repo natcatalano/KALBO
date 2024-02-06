@@ -297,6 +297,7 @@ input {
     border: none;
     border-radius: 10px;
     background-color: lightblue;
+    margin: 10px;
 }
 #btn-premium:hover {
     font-weight: 400;
@@ -304,6 +305,91 @@ input {
     background: linear-gradient(90deg, #00ADEE, #012169);
     cursor: pointer;
 }
+/*CARRUSEL*/
+.center {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+}  
+.wrapper {
+    display: flex;
+    grid-gap: 1em;
+    overflow: hidden;
+    width: 200em;
+}
+.inner {
+    display: flex;
+    grid-gap: 1em;
+    transition: all 1s ease-in-out;
+}  
+.card {
+    align-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(0deg, #000, #012169);
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+} 
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+}
+.img-tarjeta {
+    width: auto;
+    height: 60px;
+    margin: 10px;
+}
+.titulo-tarjeta {
+    font-family: directv_curvebold;
+    font-size: 14pt;
+    color: #fff;
+}
+.subtitulo-tarjeta {
+    font-family: 'poppins', sans-serif;
+    color: #00ADEE;
+    font-size: 12pt;
+    font-weight: 200;
+}
+.linea-tarjeta {
+    display: flex;
+    border-color: #00ADEE;
+    width: 80px;
+    margin: 10px;
+}
+.parrafo-tarjeta {
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 8pt;
+    margin: 10px;
+}
+.btn-tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+    font-size: 12pt;
+    width: 150px;
+    height: 40px;
+    background: linear-gradient(90deg, #012169, #00ADEE);
+    border: none;
+    border-radius: 25px;
+    margin: 10px;
+}
+.btn-tarjeta:hover {
+    background: linear-gradient(0deg, #012169, #00ADEE);
+    cursor: pointer;
+}  
 /*SECCION FUTBOL*/
 .futbol {
     background-image: url(./img/futbol-banner2.jpg);
@@ -457,6 +543,7 @@ input {
     font-family: poppins;
     font-size: 9pt;
 }
+/*BOTON FLOTANTE WHATSAPP*/
 .btn-wsp {
 position: fixed;
 width: 55px;
