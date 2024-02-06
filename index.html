@@ -6,6 +6,7 @@
     <meta name="description" content="DirectTV Agente Autorizado">
     <title>DIRECTV Argentina | Agente Autorizado</title>
     <link href="style.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="./fonts/fontello-a540fdbf/fontello-a540fdbf/css/fontello.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
     <body>
         <header>
             <div class="header-top">
-                <p class="titulo-header">COMUNICATE CON NUESTRO TELÉFONO DE VENTAS | <a href="tel:+5491178310764" class="tel-up">+54 9 11 7831-0764</a></p>
+                <p class="titulo-header">COMUNICATE CON NUESTRO TELÉFONO DE VENTAS | <a href="https://api.whatsapp.com/send?phone=541178310764" class="tel-up" target="_blank">+54 9 11 7831-0764</a></p>
             </div> 
                 
             <nav class="nav-section">
@@ -26,7 +27,7 @@
                         <li class="link-navegacion"><a class="boton-navegacion" href="#cuenta-final">DIRECTV</a></li>
                         <li class="link-navegacion"><a class="boton-navegacion" href="#premium">PREMIUM</a></li>
                         <li class="link-navegacion"><a class="boton-navegacion" href="#formulario">CONTACTO</a></li>
-                        <li class="link-navegacion"><a class="boton-telefono" href="#">+54 9 11 7831-0764</a></li>
+                        <li class="link-navegacion"><a class="boton-telefono" href="https://api.whatsapp.com/send?phone=541178310764" target="_blank">+54 9 11 7831-0764</a></li>
                     </ul>
             </nav>
         </header>
@@ -49,7 +50,7 @@
                         <img class="tarjeta-combo" src="./img/disney.png" alt="disney">
                         <img class="tarjeta-combo" src="./img/dgo.png" alt="dgo"> 
                     </div>
-                    <button class="boton-combo"><a class="link-combo" href="#formulario">CONTRATAR</a></button>
+                    <button class="boton-combo"><a class="link-combo" href="https://api.whatsapp.com/send?phone=541178310764" target="_blank">CONTRATAR</a></button>
                 </div>
         </section>
 
@@ -86,13 +87,12 @@
             <p class="subtitulo-premium">Complementá tu abono con tus PREMIUMS favoritos.</p>
             <p class="parrafo-premium">Disfrutá del contenido exclusivo de DIRECTV, desde la comodidad de tu casa.</p> 
             <div class="listas-packs">
-                <button class="btn-premium"><a class="lista-series" href="#">Series Y Películas</a></button>
-                <button class="btn-premium"><a class="lista-mundo" href="#">Mundo</a></button>
-                <button class="btn-premium"><a class="lista-deportes" href="#">Deportes</a></button>
-                <button class="btn-premium"><a class="lista-adultos" href="#">Adultos</a></button>
-            </div>     
+                <button class="active first" id="btn-premium">Series y Peliculas</button>
+                <button class="second" id="btn-premium">Mundo</button>
+                <button class="third" id="btn-premium">Deportes</button>
+                <button class="four" id="btn-premium">Adultos</button>
+            </div>
         </section>
-
          <!--SECCIÓN FÚTBOL-->
         <section class="futbol">
             <img class="uefa-futbol" src="./img/uefa.png" alt="uefa">
@@ -109,7 +109,7 @@
             <h2 class="titulo-cuenta-final">¡Contratá tu plan ahora!</h2>
             <p class="subtitulo-cuenta-final">Comenzá a disfrutar de la evolución de la TV online en todas tus pantallas.</p>
             <div class="botones-cuenta">
-                <button class="boton-0800"><a class="link-0800" href="#">+54 9 117831-0764</a></button>
+                <button class="boton-0800"><a class="link-0800" href="https://api.whatsapp.com/send?phone=541178310764" target="_blank">+54 9 117831-0764</a></button>
                 <button class="boton-quiero"><a class="link-quiero" href="#formulario">Quiero que me llamen</a></button>
             </div>
             <img class="logo-cuenta" src="./img/LogoDTVa_a.png" alt="logo_dtv">   
@@ -121,7 +121,7 @@
             <p class="terminos-condiciones"><a class="terminos-condiciones" href="">TÉRMINOS y CONDICIONES  |</a><a class="terminos-condiciones" href="">  POLÍTICAS DE PRIVACIDAD</a></p>
             <p class="copy">&#169; 2024. Agente Autorizado - Todos los derechos reservados.</p>
         </footer>
-      
+      <a href="https://api.whatsapp.com/send?phone=541178310764" class="btn-wsp" target="_blank"><i class="icon-whatsapp"></i></a>
     </body>
 
 </html>
