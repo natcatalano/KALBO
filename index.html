@@ -7,13 +7,15 @@
   <meta name="description" content="DirectTV Agente Autorizado">
   <title>DIRECTV Argentina | Agente Autorizado</title>
   <link href="style.css" rel='stylesheet' type='text/css'>
-
   <link rel="stylesheet" href="./fonts/fontello-a540fdbf/fontello-a540fdbf/css/fontello.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link href="./fonts/stylesheet.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script defer src="./script.js" type="text/javascript"></script>
 </head>
 
 
@@ -97,6 +99,7 @@
       <p class="parrafo-premium">Disfrutá del contenido exclusivo de DIRECTV, desde la comodidad de tu casa.</p>
       <div>
     </section>
+
     <!--SECCION CARRUSEL-->
     <section class="carrusel">
       <!--Botones seleccion de categorias-->
@@ -115,195 +118,175 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
+        <!-- Botones de paginacion -->
+        <div class="swiper-pagination"></div>
+
         <div class="swiper-wrapper">
 
           <!-- Slides (elementos de listas) -->
           <!--lista de series y peliculas-->
           <div class="swiper-slide" category="series">
             <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">SERIES1</h1>
+            <h1 class="titulo-tarjeta">UNIVERSAL+</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con -50%.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="series">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">SERIES2</h1>
+            <img class="img-tarjeta" src="./img/premiums/hbo.png" alt="logo-hbo-pack-hd">
+            <h1 class="titulo-tarjeta">HBO PACK HD</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Incluye HBO Max sin costo adicnional.<br>Contenido online en DGO.<br>El mejor contenido HBO.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="series">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">SERIES3</h1>
+            <img class="img-tarjeta" src="./img/premiums/disney-star.png" alt="logo-combo">
+            <h1 class="titulo-tarjeta">COMBO+</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Disney+ y Star+.<br>Diversión para toda la familia,<br>donde quieras y cuando quieras.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <!--lista de mundo-->
           <div class="swiper-slide" category="mundo">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">MUNDO1</h1>
+            <img class="img-tarjeta" src="./img/premiums/zee.png" alt="logo-zee-tv">
+            <h1 class="titulo-tarjeta">ZEE TV</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Disfruta de la tv india.<br>Peliculas, teleseries,<br>meditaciones y yoga.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="mundo">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">MUNDO2</h1>
+            <img class="img-tarjeta" src="./img/premiums/nhk.png" alt="logo-nhk-news">
+            <h1 class="titulo-tarjeta">NHK NEWS</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Las ultimas noticias, documentales.<br>Producciones de la TV japonesa.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="mundo">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">MUNDO3</h1>
+            <img class="img-tarjeta" src="./img/premiums/globo.png" alt="logo-globo">
+            <h1 class="titulo-tarjeta">TV GLOBO</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Disfruta toda la tv brasilera.<br>la mas variada programacion.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="mundo">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">MUNDO4</h1>
+            <img class="img-tarjeta" src="./img/premiums/vtv.png" alt="logo-vtv">
+            <h1 class="titulo-tarjeta">VTV</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
-              -50%.</p>
+            <p class="parrafo-tarjeta">La mas variada programacion<br>de la television uruguaya.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <!--lista de deportes-->
           <div class="swiper-slide" category="deportes">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">DEPORTES1</h1>
+            <img class="img-tarjeta" src="./img/premiums/tnt-espn.png" alt="logo-pack-futbol">
+            <h1 class="titulo-tarjeta">PACK FÚTBOL HD</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
-              -50%.</p>
+            <p class="parrafo-tarjeta">14 partidos en vivo por fecha.<br>24 hs de programacion 24/7.<br>Todos los partidos con DGO.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="deportes">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">DEPORTES2</h1>
+            <img class="img-tarjeta" src="./img/premiums/f-boliviano.png" alt="logo-futbol-boliviano">
+            <h1 class="titulo-tarjeta">FÚTBOL BOLIVIANO</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Disfrutá de 4 y 5 partidos por fecha.<br>Transmisiones en vivo y en directo.<br>Partidos de Bolivar de visitante.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="deportes">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">DEPORTES3</h1>
+            <img class="img-tarjeta" src="./img/premiums/f-paraguayo.png" alt="logo-futbol-paraguay">
+            <h1 class="titulo-tarjeta">FÚTBOL PARAGUAY</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Contenidos deportivos de Paraguay.<br>6 partidos de cada fecha.<br>Emision de dos noticieros diarios.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="deportes">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">DEPORTES4</h1>
+            <img class="img-tarjeta" src="./img/premiums/mlb.png" alt="logo-mlb">
+            <h1 class="titulo-tarjeta">MLB EXTRA INNINGS</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Disfrutá la temporada regular.<br>Hasta 7 partidos por dia.<br>Disfrutá de los mejores equipos.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="deportes">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">DEPORTES5</h1>
+            <img class="img-tarjeta" src="./img/premiums/nba.png" alt="logo-nba">
+            <h1 class="titulo-tarjeta">NBA LEAGUE PASS</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Amplia variedad de partidos.<br>Cobertura onnline de los juegos.<br>Incluiye play offs y finales.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <!--lista de adultos-->
           <div class="swiper-slide" category="adultos">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">ADULTOS1</h1>
+            <img class="img-tarjeta" src="./img/premiums/adulto-playboy.png" alt="logo-playboy">
+            <h1 class="titulo-tarjeta">PLAYBOY TV</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Líder en entretenimiento 18+.<br>Bloque de 2 horas PPV.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="adultos">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">ADULTOS2</h1>
+            <img class="img-tarjeta" src="./img/premiums/adulto-venus.png" alt="logo-venus">
+            <h1 class="titulo-tarjeta">VENUS</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses
-              con
-              -50%.</p>
+            <p class="parrafo-tarjeta">contenido para disfrutar en pareja.<br>Bloque de 2 horas PPV.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="adultos">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">ADULTOS3</h1>
+            <img class="img-tarjeta" src="./img/premiums/adulto-hustler.png" alt="logo-hustler">
+            <h1 class="titulo-tarjeta">HUSTLER</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses
-              con
-              -50%.</p>
+            <p class="parrafo-tarjeta">La programacion mas audaz.<br>Bloque de 2 horas PPV.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="adultos">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">ADULTOS4</h1>
+            <img class="img-tarjeta" src="./img/premiums/adulto-exxxotico.png" alt="logo-exxxotico">
+            <h1 class="titulo-tarjeta">EXXXOTICO</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses
-              con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Variedad de XTSY y Hustler TV.<br>Acceso online a XSTYNow, sin costo.<br>2 meses al 50%.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="adultos">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">ADULTOS5</h1>
+            <img class="img-tarjeta" src="./img/premiums/adulto-hotpack.png" alt="logo-hotpack">
+            <h1 class="titulo-tarjeta">HOTPACK</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses
-              con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Entretenimiento para adultos.<br>Contenido online en HOTGO.TV.<br>1 mes gratis + 2 meses al 50%.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
           <div class="swiper-slide" category="adultos">
-            <img class="img-tarjeta" src="./img/premiums/universal.png" alt="logo-universal">
-            <h1 class="titulo-tarjeta">ADULTOS6</h1>
+            <img class="img-tarjeta" src="./img/premiums/adulto-xtsy.png" alt="logo-xtsy">
+            <h1 class="titulo-tarjeta">XTSY</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses
-              con
-              -50%.</p>
+            <p class="parrafo-tarjeta">Peliculas x las mejores productoas.<br>Bloque de 2 horas PPV.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
@@ -330,8 +313,7 @@
       <h2 class="titulo-cuenta-final">¡Contratá tu plan ahora!</h2>
       <p class="subtitulo-cuenta-final">Comenzá a disfrutar de la evolución de la TV online en todas tus pantallas.</p>
       <div class="botones-cuenta">
-        <button class="boton-0800"><a class="link-0800" href="https://api.whatsapp.com/send?phone=541178310764"
-            target="_blank">+54 9 117831-0764</a></button>
+        <button class="boton-0800"><a class="link-0800" href="https://api.whatsapp.com/send?phone=541178310764" target="_blank">+54 9 117831-0764</a></button>
         <button class="boton-quiero"><a class="link-quiero" href="#formulario">Quiero que me llamen</a></button>
       </div>
       <img class="logo-cuenta" src="./img/LogoDTVa_a.png" alt="logo_dtv">
@@ -347,9 +329,7 @@
   <!--BOTON FLOTANTE WHATSAPP-->
   <a href="https://api.whatsapp.com/send?phone=541178310764" class="btn-wsp" target="_blank"><i
       class="icon-whatsapp"></i></a>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-  <script defer src="./script.js" type="text/javascript"></script>
+
 </body>
 
 </html>
