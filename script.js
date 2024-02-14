@@ -1,23 +1,60 @@
-const buttonsWrapper = document.querySelector(".listas-packs");
-const slides = document.querySelector(".inner");
+//SLIDER DE LISTAS PREMIUM
+const swiper = new Swiper(".swiper", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 3,
+  slidesPerGroup: 1,
+  spaceBetween: 20,
+  loop: true,
+});
 
-buttonsWrapper.addEventListener("click", e => {
-  if (e.target.nodeName === "BUTTON") {
-    Array.from(buttonsWrapper.children).forEach(item =>
-      item.classList.remove("active")
-    );
-    if (e.target.classList.contains("first")) {
-      slides.style.transform = "translateX(0.9%)";
-      e.target.classList.add("active");
-    } else if (e.target.classList.contains("second")) {
-      slides.style.transform = "translateX(-24.66%)";
-      e.target.classList.add("active");
-    } else if (e.target.classList.contains("third")){
-      slides.style.transform = 'translatex(-49.8%)';
-      e.target.classList.add('active');
-    } else if (e.target.classList.contains("four")){
-        slides.style.transform = 'translatex(-74.9%)';
-        e.target.classList.add('active');
+// SELECCION DE LISTAS 
+$(document).ready(function () {
+
+  // AGREGANDO CLASE ACTIVE AL PRIMER ENLACE
+  $('.category_list .category_item[category="all"]').addClass('ct_item-active');
+
+  // FILTRANDO PRODUCTOS 
+  $('.category_item').click(function () {
+    var catProduct = $(this).attr('category');
+    console.log(catProduct);
+
+    // AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO 
+    $('.category_item').removeClass('ct_item-active');
+    $(this).addClass('ct_item-active');
+
+    // OCULTANDO PRODUCTOS 
+    function hideProduct() {
+      $('.swiper-slide').hide();
     }
+    hideProduct();
+
+    // MOSTRANDO PRODUCTOS 
+    function showProduct() {
+      $('.swiper-slide[category="' + catProduct + '"]').show();
+    }
+    showProduct();
+
+    updateSlider();
+  });
+
+  // MOSTRANDO TODOS LOS PRODUCTOS
+  $('.category_item[category="all"]').click(function () {
+    function showAll() {
+      $('.swiper-slide').show();
+    }
+    showAll();
+
+    updateSlider();
+  });
+
+  // FUNCION PARA ACTUALIZAR SLIDER
+  function updateSlider() {
+    swiper.loopDestroy();
+    swiper.loopCreate();
+    swiper.update();
+    swiper.slideTo(0);
   }
 });
