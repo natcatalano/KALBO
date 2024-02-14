@@ -1,8 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     overflow-x: hidden;
 }
+
 /*SECCION HEADER*/
 .header-top {
     display: flex;
@@ -15,17 +17,20 @@
     background-color: #012169;
     z-index: 2;
 }
+
 .titulo-header {
     color: white;
     font-family: directv_curvemedium;
     font-size: 11pt;
 }
-.tel-up{
+
+.tel-up {
     color: #ffc60b;
     font-family: 'poppins', sans-serif;
     font-size: 11pt;
     text-decoration: none;
 }
+
 /*SECCIÓN NAVEGACION*/
 .nav-section {
     position: fixed;
@@ -39,13 +44,16 @@
     background-color: #000;
     z-index: 2;
 }
+
 .logo {
     display: flex;
-    position: relative; left: 90px; 
+    position: relative;
+    left: 90px;
     width: 200px;
     height: auto;
     background-color: transparent;
 }
+
 .navegacion {
     float: right;
     list-style: none;
@@ -54,11 +62,13 @@
     margin: 0 5px;
     background-color: transparent;
 }
+
 .link-navegacion {
     list-style-type: none;
     display: inline;
     background-color: transparent;
 }
+
 .boton-navegacion {
     font-family: directv_curvemedium;
     font-size: 1em;
@@ -68,9 +78,11 @@
     color: white;
     background-color: transparent;
 }
+
 .boton-navegacion:hover {
     color: #00acfb;
 }
+
 .boton-telefono {
     font-family: 'poppins', sans-serif;
     font-size: 1em;
@@ -80,6 +92,7 @@
     color: #ffc60b;
     background-color: transparent;
 }
+
 /*SECCION HERO*/
 .hero {
     background-image: url(hero_background.jpg);
@@ -87,12 +100,16 @@
     width: 100%;
     height: 650px;
 }
+
 .phone-hecho {
     display: flex;
-    position: relative; left: 8%; top: 220px;
+    position: relative;
+    left: 8%;
+    top: 220px;
     width: auto;
     height: 350px;
-}  
+}
+
 .cuadro-hero {
     display: flex;
     flex-direction: column;
@@ -103,31 +120,38 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: absolute; right: 150px; top: 110px;
+    position: absolute;
+    right: 150px;
+    top: 110px;
     overflow-y: hidden;
 }
+
 .publi-combo {
     font-family: 'poppins', sans-serif;
     font-weight: 400;
     font-size: 16pt;
     color: #00acfb;
 }
+
 .sub-combo {
     font-family: 'poppins', sans-serif;
     font-weight: 400;
     font-size: 12pt;
     color: white;
 }
+
 .combo {
     font-family: 'directv_curvebold';
     font-size: 30pt;
     color: white;
 }
+
 .descuento-combo {
     font-family: 'directv_curvebold';
     Font-size: 20pt;
     color: #ffc60b;
 }
+
 .duracion-combo {
     font-family: 'poppins', sans-serif;
     font-weight: 400;
@@ -135,11 +159,13 @@
     Color: white;
     margin-bottom: 10px;
 }
+
 .linea-hero {
     justify-content: center;
     width: 120px;
     border-color: #00acfb;
 }
+
 .descripcion-combo {
     font-family: 'poppins', sans-serif;
     font-size: 12pt;
@@ -147,20 +173,23 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .tarjetas {
     display: flex;
     flex-direction: row;
     gap: 10px;
     overflow-y: hidden;
 }
+
 .tarjeta-combo {
     justify-content: center;
     align-items: center;
     width: 60px;
     height: 60px;
-    border:  2px #012169 solid;
+    border: 2px #012169 solid;
     border-radius: 10px;
 }
+
 .boton-combo {
     border: none;
     font-size: 12pt;
@@ -172,15 +201,18 @@
     border-radius: 25px;
     width: 60%;
 }
+
 .boton-combo:hover {
     color: #012169;
     background: linear-gradient(0deg, #B98E00, #ffc60b)
 }
+
 .link-combo {
     font-family: 'poppins', sans-serif;
     text-decoration: none;
     color: white;
 }
+
 .cuadro-fondo-combo {
     border: 5px #012169 solid;
     border-radius: 20px;
@@ -188,8 +220,11 @@
     height: 530px;
     background-color: #012169;
     opacity: 0.4;
-    position: absolute; right: 160px; top: 110px;
+    position: absolute;
+    right: 160px;
+    top: 110px;
 }
+
 /*SECCION FORMULARIO*/
 .formulario {
     display: flex;
@@ -198,24 +233,28 @@
     height: 500px;
     align-items: center;
     justify-content: center;
-    background: linear-gradient( 0deg, #1b1b32, #012169);
+    background: linear-gradient(0deg, #1b1b32, #012169);
     background-size: cover;
 }
+
 .titulo-formulario {
     color: white;
     font-family: directv_curvebold;
     font-size: 36pt;
 }
+
 .subtitulo-formulario {
     font-family: directv_curveregular;
     font-size: 24pt;
     color: white;
 }
+
 .parrafo-formulario {
     font-family: directv_curveregular;
     font-size: 12pt;
     color: white;
 }
+
 form {
     margin: 1rem;
     display: flex;
@@ -225,6 +264,7 @@ form {
     align-items: center;
     gap: 20px;
 }
+
 input {
     font-family: directv_curveregular;
     font-size: 12pt;
@@ -236,6 +276,7 @@ input {
     border: none;
     border-radius: 25px;
 }
+
 .btn-form {
     font-family: directv_curvebold;
     font-size: 12pt;
@@ -248,15 +289,18 @@ input {
     border: none;
     border-radius: 30px;
 }
+
 .btn-form:hover {
     color: white;
     background-color: #012169;
 }
+
 .autorizacion {
     font-family: directv_curveregular;
     font-size: 9pt;
     color: white;
 }
+
 /*SECCION PREMIUM*/
 .premium {
     display: flex;
@@ -264,29 +308,34 @@ input {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 600px;
+    height: 200px;
 }
+
 .titulo-premium {
     color: #000;
     font-family: directv_curvebold;
     font-size: 36pt;
 }
+
 .subtitulo-premium {
     color: #000;
     font-family: 'poppins', sans-serif;
     font-size: 24pt;
 }
+
 .parrafo-premium {
     color: #00ADEE;
-    font-family: 'poppins',sans-serif;
+    font-family: 'poppins', sans-serif;
     font-size: 14pt;
 }
+
 .listas-packs {
     display: flex;
     flex-direction: row;
     gap: 20px;
     margin-top: 30px;
 }
+
 #btn-premium {
     color: #00ADEE;
     font-family: 'poppins', sans-serif;
@@ -299,96 +348,142 @@ input {
     background-color: lightblue;
     margin: 10px;
 }
+
 #btn-premium:hover {
     font-weight: 400;
     color: white;
     background: linear-gradient(90deg, #00ADEE, #012169);
     cursor: pointer;
 }
+
 /*CARRUSEL*/
-.center {
-    align-items: start;
+.carrusel {
     display: flex;
     flex-direction: column;
-    width: 800px;
-    height: 350px;
-    justify-content: center;
-}  
-.wrapper {
-    display: flex;
-    overflow: hidden;
-}
-.inner {
-    display: flex;
-    grid-gap: 1em;
-    transition: all 1s ease-in-out;
-}  
-.card {
-    align-content: center;
+    position: relative;
     align-items: center;
-    width: 240px;
-    height: 300px;
-    background: linear-gradient(0deg, #000, #012169);
-    border-radius: 0.5em;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-} 
-.contenido {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    border-radius: 10px;
-    padding: 1em;
-    text-align: center;
+    width: 100%;
+    height: 450px;
 }
-.img-tarjeta {
-    width: auto;
-    height: 60px;
-    margin: 5px;
-}
-.titulo-tarjeta {
-    font-family: directv_curvebold;
-    font-size: 14pt;
-    color: #fff;
-}
-.subtitulo-tarjeta {
-    font-family: 'poppins', sans-serif;
-    color: #00ADEE;
-    font-size: 12pt;
-    font-weight: 200;
-}
-.linea-tarjeta {
-    display: flex;
-    border-color: #00ADEE;
-    width: 80px;
-    margin: 5px;
-}
-.parrafo-tarjeta {
-    color: #fff;
-    font-family: 'poppins', sans-serif;
-    font-size: 8pt;
-    margin: 5px;
-}
-.btn-tarjeta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-family: 'poppins', sans-serif;
-    font-size: 12pt;
+
+.category_item {
     width: 150px;
-    height: 40px;
-    background: linear-gradient(90deg, #012169, #00ADEE);
+    height: 45px;
+    gap: 10px;
+    margin: 20px;
+    border-radius: 10px;
     border: none;
-    border-radius: 25px;
-    margin: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: directv_curvemedium;
+    font-size: 12pt;
+    text-decoration: none;
+    color: #00ADEE;
+    background-color: lightblue;
 }
-.btn-tarjeta:hover {
+
+.category_item:hover {
+    color: white;
     background: linear-gradient(0deg, #012169, #00ADEE);
     cursor: pointer;
-}  
+}
+
+.swiper {
+    width: 90%;
+    height: 350px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.swiper-wrapper {
+    width: 200px;
+    height: 300px;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(0deg, #000, #012169);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.swiper-slide img {
+    width: auto;
+    height: 50px;
+    margin: 5px;
+}
+
+.swiper-slide h1 {
+    font-family: directv_curvebold;
+    font-size: 18pt;
+    color: #fff;
+    margin: 5px;
+}
+
+.swiper-slide h3 {
+    font-family: 'poppins', sans-serif;
+    font-size: 12pt;
+    color: #00ADEE;
+    margin: 5px;
+}
+
+.linea-tarjeta {
+    position: relative;
+    left: 100px;
+    width: 30%;
+    border-color: #00adee;
+}
+
+.swiper-slide p {
+    margin: 5px;
+    font-family: 'poppins', sans-serif;
+    font-size: 9pt;
+    text-align: center;
+    color: #fff;
+}
+
+.swiper-slide button {
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(0deg, #012169, #00ADEE);
+    color: #fff;
+    font-size: 9pt;
+    font-family: 'poppins', sans-serif;
+}
+
+.swiper-slide button:hover {
+    background: linear-gradient(90deg, #00ADEE, #012169);
+    cursor: pointer;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px; 
+  height: 30px; 
+}
+
+.swiper-button-prev {
+  left: 10px; 
+}
+
+.swiper-button-next {
+  right: 10px; /* Distancia desde el borde derecho */
+}
+
 /*SECCION FUTBOL*/
 .futbol {
     background-image: url(./img/futbol-banner2.jpg);
@@ -396,31 +491,40 @@ input {
     width: 100%;
     height: 500px;
 }
+
 .uefa-futbol {
     float: left;
-    position: relative; left: 200px; top: 120px;
+    position: relative;
+    left: 200px;
+    top: 120px;
     width: 300px;
     height: auto;
 }
+
 .descripcion-futbol {
     display: flex;
     flex-direction: column;
     float: right;
-    position: relative; right: 120px; top: 120px;
+    position: relative;
+    right: 120px;
+    top: 120px;
     justify-content: center;
     align-items: center;
 }
+
 .titulo-futbol {
     font-family: directv_curvebold;
     text-align: center;
     font-size: 24pt;
     color: white;
 }
+
 .linea-futbol {
     border-color: #00acfb;
     width: 120px;
     margin: 20px 0 20px 0;
 }
+
 .subtitulo-futbol {
     font-family: 'poppins', sans-serif;
     font-weight: 400;
@@ -428,6 +532,7 @@ input {
     text-align: center;
     color: white;
 }
+
 .contactar {
     font-family: 'poppins', sans-serif;
     font-size: 15pt;
@@ -439,13 +544,16 @@ input {
     color: white;
     background: linear-gradient(90deg, #00ADEE, #012169);
 }
+
 .contactar:hover {
     background: linear-gradient(0deg, #012169, #00ADEE);
 }
+
 .link-contactar {
     text-decoration: none;
     color: white;
 }
+
 /*SECCION CUENTA*/
 .cuenta-final {
     display: flex;
@@ -457,23 +565,27 @@ input {
     background-image: url(./img/puntos.png);
     background-repeat: no-repeat;
 }
+
 .titulo-cuenta-final {
     color: #012169;
     font-family: directv_curvebold;
     font-size: 36pt;
 }
+
 .subtitulo-cuenta-final {
     color: #012169;
     font-family: directv_curveregular;
     font-size: 24pt;
     margin: 10px;
 }
+
 .botones-cuenta {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
 .boton-0800 {
     background-color: #ffc60b;
     width: 300px;
@@ -483,16 +595,19 @@ input {
     border: none;
     border-radius: 25px;
 }
+
 .link-0800 {
     font-family: 'poppins', sans-serif;
     font-size: 15pt;
     text-decoration: none;
     color: white;
 }
+
 .boton-0800:hover {
     color: white;
     background: linear-gradient(0deg, #B98E00, #ffc60b);
 }
+
 .boton-quiero {
     font-family: poppins;
     font-size: 15pt;
@@ -504,21 +619,25 @@ input {
     border: none;
     border-radius: 25px;
 }
+
 .link-quiero {
     font-family: 'poppins', sans-serif;
     font-size: 15pt;
     text-decoration: none;
     color: white;
 }
+
 .boton-quiero:hover {
     color: white;
     background: linear-gradient(0deg, #012169, #00ADEE)
 }
+
 .logo-cuenta {
     width: 150px;
     height: auto;
     margin-top: 80px;
 }
+
 /*SECCION FOOTER*/
 .pie-pagina {
     width: 100%;
@@ -531,34 +650,38 @@ input {
     color: white;
     background-color: #000;
 }
+
 .terminos-condiciones {
     text-decoration: none;
     color: white;
     font-family: poppins;
     font-size: 9pt;
 }
+
 .copy {
     color: white;
     font-family: poppins;
     font-size: 9pt;
 }
+
 /*BOTON FLOTANTE WHATSAPP*/
 .btn-wsp {
-position: fixed;
-width: 55px;
-height: 55px;
-line-height: 55px;
-bottom: 30px;
-right: 30px;
-color: #fff;
-background: #0df053;
-border: 3px white solid;
-border-radius: 50px;
-text-align: center;
-font-size: 30px;
-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-z-index: 2;
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    color: #fff;
+    background: #0df053;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    overflow: hidden;
 }
+
 .btn-wsp:hover {
     text-decoration: none;
     color: #0df053;
