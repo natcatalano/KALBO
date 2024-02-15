@@ -651,9 +651,9 @@ input {
     background: #0df053;
     border-radius: 3.125em;
     text-align: center;
-    font-size: 2em;
+    font-size: 24pt;
     box-shadow: 0em 0.063em 0.625em rgba(0, 0, 0, 0.3);
-    z-index: 2;
+    z-index: 10;
 }
 
 .btn-wsp:hover {
