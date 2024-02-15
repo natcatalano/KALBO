@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="DirectTV Agente Autorizado">
   <title>DIRECTV Argentina | Agente Autorizado</title>
-  <link href="style.css" rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="./fonts/fontello-a540fdbf/fontello-a540fdbf/css/fontello.css">
+  <link href="./style.css" rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/fonts/fontello-a540fdbf/fontello-a540fdbf/css/fontello.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./script.js" type="text/javascript"></script>
 </head>
 
@@ -69,7 +70,7 @@
       <p class="subtitulo-formulario">Adquirilo hoy mismo.</p>
       <p class="parrafo-formulario">Llená el siguiente formulario, y un agente se pondrá en contacto para asesorarte a
         la brevedad.</p>
-      <form action="" method="post">
+      <form id="contactForm" action="./enviar_mail.php" method="post">
         <div class="info">
           <label for="lead-name"></label>
           <input type="text" name="lead-name" id="lead-name" placeholder="NOMBRE COMPLETO" required>
@@ -82,7 +83,7 @@
 
         <div class="info">
           <label for="lead-tel"></label>
-          <input type="tel" name="tel-email" id="lead-tel" placeholder="TELÉFONO" required>
+          <input type="tel" name="lead-tel" id="lead-tel" placeholder="TELÉFONO" required>
         </div>
         <button class="btn-form">Enviar</button>
       </form>
@@ -130,7 +131,8 @@
             <h1 class="titulo-tarjeta">UNIVERSAL+</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con -50%.</p>
+            <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
+              -50%.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
@@ -139,7 +141,8 @@
             <h1 class="titulo-tarjeta">HBO PACK HD</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Incluye HBO Max sin costo adicnional.<br>Contenido online en DGO.<br>El mejor contenido HBO.</p>
+            <p class="parrafo-tarjeta">Incluye HBO Max sin costo adicnional.<br>Contenido online en DGO.<br>El mejor
+              contenido HBO.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
@@ -148,7 +151,8 @@
             <h1 class="titulo-tarjeta">COMBO+</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Disney+ y Star+.<br>Diversión para toda la familia,<br>donde quieras y cuando quieras.</p>
+            <p class="parrafo-tarjeta">Disney+ y Star+.<br>Diversión para toda la familia,<br>donde quieras y cuando
+              quieras.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
@@ -195,7 +199,8 @@
             <h1 class="titulo-tarjeta">PACK FÚTBOL HD</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">14 partidos en vivo por fecha.<br>24 hs de programacion 24/7.<br>Todos los partidos con DGO.</p>
+            <p class="parrafo-tarjeta">14 partidos en vivo por fecha.<br>24 hs de programacion 24/7.<br>Todos los
+              partidos con DGO.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
@@ -204,7 +209,8 @@
             <h1 class="titulo-tarjeta">FÚTBOL BOLIVIANO</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Disfrutá de 4 y 5 partidos por fecha.<br>Transmisiones en vivo y en directo.<br>Partidos de Bolivar de visitante.</p>
+            <p class="parrafo-tarjeta">Disfrutá de 4 y 5 partidos por fecha.<br>Transmisiones en vivo y en
+              directo.<br>Partidos de Bolivar de visitante.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
@@ -213,7 +219,8 @@
             <h1 class="titulo-tarjeta">FÚTBOL PARAGUAY</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Contenidos deportivos de Paraguay.<br>6 partidos de cada fecha.<br>Emision de dos noticieros diarios.</p>
+            <p class="parrafo-tarjeta">Contenidos deportivos de Paraguay.<br>6 partidos de cada fecha.<br>Emision de dos
+              noticieros diarios.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
@@ -222,7 +229,8 @@
             <h1 class="titulo-tarjeta">MLB EXTRA INNINGS</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Disfrutá la temporada regular.<br>Hasta 7 partidos por dia.<br>Disfrutá de los mejores equipos.</p>
+            <p class="parrafo-tarjeta">Disfrutá la temporada regular.<br>Hasta 7 partidos por dia.<br>Disfrutá de los
+              mejores equipos.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
@@ -231,7 +239,8 @@
             <h1 class="titulo-tarjeta">NBA LEAGUE PASS</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Amplia variedad de partidos.<br>Cobertura onnline de los juegos.<br>Incluiye play offs y finales.</p>
+            <p class="parrafo-tarjeta">Amplia variedad de partidos.<br>Cobertura onnline de los juegos.<br>Incluiye play
+              offs y finales.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
@@ -268,7 +277,8 @@
             <h1 class="titulo-tarjeta">EXXXOTICO</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Variedad de XTSY y Hustler TV.<br>Acceso online a XSTYNow, sin costo.<br>2 meses al 50%.</p>
+            <p class="parrafo-tarjeta">Variedad de XTSY y Hustler TV.<br>Acceso online a XSTYNow, sin costo.<br>2 meses
+              al 50%.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
@@ -277,7 +287,8 @@
             <h1 class="titulo-tarjeta">HOTPACK</h1>
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
-            <p class="parrafo-tarjeta">Entretenimiento para adultos.<br>Contenido online en HOTGO.TV.<br>1 mes gratis + 2 meses al 50%.</p>
+            <p class="parrafo-tarjeta">Entretenimiento para adultos.<br>Contenido online en HOTGO.TV.<br>1 mes gratis +
+              2 meses al 50%.</p>
             <button class="btn-tarjeta">Contactar</button>
           </div>
 
@@ -313,7 +324,8 @@
       <h2 class="titulo-cuenta-final">¡Contratá tu plan ahora!</h2>
       <p class="subtitulo-cuenta-final">Comenzá a disfrutar de la evolución de la TV online en todas tus pantallas.</p>
       <div class="botones-cuenta">
-        <button class="boton-0800"><a class="link-0800" href="https://api.whatsapp.com/send?phone=541178310764" target="_blank">+54 9 117831-0764</a></button>
+        <button class="boton-0800"><a class="link-0800" href="https://api.whatsapp.com/send?phone=541178310764"
+            target="_blank">+54 9 117831-0764</a></button>
         <button class="boton-quiero"><a class="link-quiero" href="#formulario">Quiero que me llamen</a></button>
       </div>
       <img class="logo-cuenta" src="./img/LogoDTVa_a.png" alt="logo_dtv">
@@ -327,9 +339,46 @@
     <p class="copy">&#169; 2024. Agente Autorizado - Todos los derechos reservados.</p>
   </footer>
   <!--BOTON FLOTANTE WHATSAPP-->
-  <a href="https://api.whatsapp.com/send?phone=541178310764" class="btn-wsp" target="_blank"><i
-      class="icon-whatsapp"></i></a>
+  <a href="https://api.whatsapp.com/send?phone=541178310764" class="btn-wsp" target="_blank"><i class="icon-whatsapp"></i></a>
+  <script>
+    $(document).ready(function () {
+      $('#contactForm').submit(function (e) {
+        e.preventDefault();
 
+        var nombre = $('#lead-name').val();
+        var correo = $('#lead-email').val();
+        var telefono = $('#lead-tel').val();
+
+        var url = '/enviar_mail.php'
+
+        $.ajax({
+          url: url,
+          method: 'POST',
+          data: {
+            nombre: nombre,
+            correo: correo,
+            telefono: telefono
+          },
+          success: function (response) {
+            alert('¡Gracias! Tu formulario ha sido enviado correctamente.');
+            // Aquí puedes agregar cualquier otra acción que quieras realizar después de enviar el formulario
+          },
+          error: function (xhr, status, error) {
+            console.error(error);
+            alert('Ocurrió un error al enviar el formulario. Por favor, inténtalo de nuevo más tarde.');
+          }
+        });
+      });
+    });
+
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      // Limpia los campos de entrada después de enviar el formulario
+      document.getElementById("lead-name").value = "";
+      document.getElementById("lead-email").value = "";
+      document.getElementById("lead-tel").value = "";
+    });
+
+  </script>
 </body>
 
 </html>
