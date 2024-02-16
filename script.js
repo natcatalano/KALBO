@@ -6,7 +6,17 @@ const swiper = new Swiper(".swiper", {
 	},
 	slidesPerView: 3,
   slilidesPerGroup: 1,
-	spaceBetween: 20,
+	spaceBetween: 30,
+	
+	breakpoints: {
+
+		1600 : {
+			slidesPerView: 3,
+			slilidesPerGroup: 1,
+			spaceBetween: 90
+		},
+	}
+
 });
 
 // SELECCION DE LISTAS 
