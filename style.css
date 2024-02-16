@@ -124,6 +124,7 @@ body {
 .cuadro-hero {
     display: flex;
     flex-direction: column;
+    align-content: center;
     float: right;
     width: 21.875em;
     height: 31.875em;
@@ -189,7 +190,6 @@ body {
     display: flex;
     flex-direction: row;
     gap: 0.625em;
-    overflow-y: hidden;
 }
 
 .tarjeta-combo {
@@ -197,7 +197,6 @@ body {
     align-items: center;
     width: 3.75em;
     height: 3.75em;
-    border: 0.125em #012169 solid;
     border-radius: 0.625em;
 }
 
@@ -331,13 +330,13 @@ input {
 
 .subtitulo-premium {
     color: #000;
-    font-family: 'poppins', sans-serif;
+    font-family: directv_curveregular;
     font-size: 24pt;
 }
 
 .parrafo-premium {
     color: #00ADEE;
-    font-family: 'poppins', sans-serif;
+    font-family: directv_curveregular;
     font-size: 14pt;
 }
 
@@ -377,7 +376,6 @@ input {
 .swiper {
     width: 70%;
     height: 22em;
-    background-color: #fff;
 }
 
 .swiper-button-prev,
@@ -541,17 +539,21 @@ input {
     background-repeat: no-repeat;
 }
 
+.imagen-cuenta-final {
+position: absolute;
+top: 215em;
+}
+
 .titulo-cuenta-final {
-    color: #012169;
+    color: #000;
     font-family: directv_curvebold;
     font-size: 36pt;
 }
 
 .subtitulo-cuenta-final {
-    color: #012169;
+    color: #000;
     font-family: directv_curveregular;
-    font-size: 24pt;
-    margin: 1em;
+    font-size: 26pt;
 }
 
 .botones-cuenta {
@@ -661,4 +663,452 @@ input {
     color: #0df053;
     background-color: #fff;
     cursor: pointer;
+}
+
+@media screen and (min-width: 1920px) and (orientation: landscape) {
+
+    /*SECCION HEADER*/
+    .header-top {
+        width: 100%;
+        height: 3.125em;
+    }
+
+    .titulo-header {
+        font-size: 12pt;
+    }
+
+    .tel-up {
+        font-size: 12pt;
+    }
+
+    /*SECCIÓN NAVEGACION*/
+    .nav-section {
+        margin: 3.125em 0;
+        width: 100%;
+        height: 7em;
+    }
+
+    .logo {
+        position: relative;
+        left: 13em;
+        width: 10em;
+        height: auto;
+    }
+
+    .navegacion {
+        margin: 0 0.313em;
+    }
+
+    .boton-navegacion {
+        font-size: 15pt;
+        line-height: 4.375em;
+        padding: 0.938em 0.625em;
+    }
+
+
+    .boton-telefono {
+        font-size: 15pt;
+        line-height: 4.375em;
+        padding: 0.938em 0.625em;
+    }
+
+    /*SECCION HERO*/
+    .hero {
+        width: 100%;
+        height: 62em;
+    }
+
+    .phone-hecho {
+        position: relative;
+        left: 5%;
+        top: 20em;
+        width: auto;
+        height: 30em;
+    }
+
+    .cuadro-hero {
+        width: 50em;
+        height: 50em;
+        position: absolute;
+        right: 6em;
+        top: 10em;
+    }
+
+
+    .publi-combo {
+        font-family: 'poppins', sans-serif;
+        font-weight: 400;
+        font-size: 20pt;
+        color: #00acfb;
+    }
+    
+    .sub-combo {
+        font-family: 'poppins', sans-serif;
+        font-weight: 400;
+        font-size: 20pt;
+        color: white;
+    }
+    
+    .combo {
+        font-family: 'directv_curvebold';
+        font-size: 40pt;
+        color: white;
+    }
+    
+    .descuento-combo {
+        font-family: 'directv_curvebold';
+        Font-size: 26pt;
+        color: #ffc60b;
+    }
+    
+    .duracion-combo {
+        font-family: 'poppins', sans-serif;
+        font-weight: 400;
+        font-size: 20pt;
+        Color: white;
+        margin-bottom: 0.625em;
+    }
+    
+    .linea-hero {
+        justify-content: center;
+        width: 12em;
+        border-color: #00acfb;
+    }
+    
+    .descripcion-combo {
+        font-family: 'poppins', sans-serif;
+        font-size: 18pt;
+        color: white;
+        margin-top: 0.625em;
+        margin-bottom: 0.625em;
+    }
+    
+    .tarjetas {
+        display: flex;
+        flex-direction: row;
+        gap: 0.625em;
+    }
+    
+    .tarjeta-combo {
+        justify-content: center;
+        align-items: center;
+        width: 8em;
+        height: 8em;
+        border-radius: 0.625em;
+    }
+    
+    .boton-combo {
+        border: none;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 2em;
+        padding: 0.75rem 1.5rem;
+        background-color: #00ADEE;
+        border-radius: 2em;
+        width: 45%;
+        height: 4em;
+    }
+
+    .link-combo {
+        font-family: directv_curveregular;
+        font-weight: 600;
+        font-size: 20pt;
+    }
+
+    /*SECCION FORMULARIO*/
+    .formulario {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height: 55em;
+    }
+
+    .titulo-formulario {
+        position: relative;
+        top: -0.8em;
+        font-family: directv_curvebold;
+        font-size: 36pt;
+    }
+    
+    .subtitulo-formulario {
+        position: relative;
+        top: -0.5em;
+    }
+    
+    .parrafo-formulario {
+        position: relative;
+        top: 0.5em;
+        font-size: 16pt;
+    }
+    
+    form {
+        position: relative;
+        top: 2em;
+        width: 80%;
+        height: auto;
+        margin: 1rem;
+        gap: 1.25em;
+    }
+
+    input {
+        margin: 0.75em;
+        width: 40em;
+        height: 4.5em;
+        border-radius: 3em;
+    }
+
+    .btn-form {
+        width: 20em;
+        height: 5em;
+        border-radius: 2.5em;
+    }
+
+    .autorizacion {
+        position: relative;
+        top: 2em;
+        margin-top: 2em;
+        font-size: 12pt;
+    }
+
+    /*SECCION PREMIUM*/
+    .premium {
+        width: 100%;
+        height: 12em;
+        margin: 0.5em;
+        padding: 2em;
+    }
+
+    .titulo-premium {
+        position: relative;
+        top: 0.6em;
+        font-size: 47pt;
+    }
+
+    .subtitulo-premium {
+        position: relative;
+        top: 1.1em;
+        font-size: 29pt;
+    }
+
+    .parrafo-premium {
+        position: relative;
+        top: 2em;
+        font-size: 17pt;
+    }
+
+    /*CARRUSEL*/
+    .carrusel {
+        width: 100%;
+        height: 40em;
+        padding: 0.625em 2.5em;
+        margin: 2em;
+    }
+
+    .category_item {
+        width: 10em;
+        height: 3em;
+        margin: 1.5em;
+        border-radius: 1em;
+        font-size: 15pt;
+    }
+
+    .swiper {
+        width: 80%;
+        height: 26em;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: absolute;
+        top: 50%;
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    .swiper-slide {
+        border-radius: 2em;
+        padding: 1em;
+    }
+
+    .swiper-slide img {
+        width: auto;
+        height: 6em;
+        margin: 1.2em;
+    }
+
+    .swiper-slide h1 {
+        font-size: 18pt;
+        color: #fff;
+    }
+
+    .swiper-slide h3 {
+        font-weight: 400;
+        font-size: 15pt;
+    }
+
+    .swiper-slide hr {
+        left: 37%;
+        width: 20%;
+        margin: 0.5em;
+    }
+
+    .swiper-slide p {
+        margin: 0.5em;
+        font-size: 12pt;
+        text-align: center;
+        color: #fff;
+    }
+
+    .swiper-slide button {
+        width: 12em;
+        height: 3em;
+        margin: 0.2em;
+        border-radius: 2em;
+        background: linear-gradient(90deg, #00ADEE, #00adaa);
+        font-size: 15pt;
+        font-weight: 400;
+    }
+
+    /*SECCION FUTBOL*/
+    .futbol {
+        width: 100%;
+        height: 50em;
+    }
+
+    .uefa-futbol {
+        float: left;
+        position: relative;
+        left: 14em;
+        top: 10.5em;
+        width: 29em;
+        height: auto;
+    }
+
+    .descripcion-futbol {
+        float: right;
+        position: relative;
+        right: 9em;
+        top: 13em;
+    }
+
+    .titulo-futbol {
+        font-size: 36pt;
+    }
+
+    .linea-futbol {
+        width: 7.5em;
+        margin: 1.25em 0 1.25em 0;
+    }
+
+    .subtitulo-futbol {
+        font-size: 20pt;
+    }
+
+    .contactar {
+        width: 15em;
+        height: 3.5em;
+        margin-top: 2em;
+        border-radius: 2em;
+    }
+
+    /*SECCION CUENTA*/
+    .cuenta-final {
+        width: 100%;
+        height: 50em;
+    }
+
+    .imagen-cuenta-final {
+        position: absolute;
+        top: 215em
+    }
+
+    .titulo-cuenta-final {
+        position: relative;
+        top: 2.5em;
+        font-size: 40pt;
+    }
+
+    .subtitulo-cuenta-final {
+        position: relative;
+        top: 3em;
+        margin: 1em;
+    }
+
+    .boton-0800 {
+        font-size: 24pt;
+        position: relative;
+        top: 0.1em;
+        left: -0.5em;
+        width: 15em;
+        height: 2.3em;
+        border-radius: 4em;
+    }
+
+    .link-0800 {
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        font-size: 24pt;
+        text-decoration: none;
+        color: white;
+    }
+
+    .boton-quiero {
+        font-family: directv_curvemedium;
+        font-size: 24pt;
+        font-weight: 400;
+        position: relative;
+        top: 0.54em;
+        right: -0.5em;
+        width: 15em;
+        height: 2.3em;
+        border-radius: 2em;
+    }
+
+    .link-quiero {
+        font-family: poppins, sans-serif;
+        font-weight: 600;
+        font-size: 24pt;
+        text-decoration: none;
+        color: white;
+    }
+
+    .logo-cuenta {
+        position: relative;
+        top: 6em;
+        width: 10em;
+        height: auto;
+        margin-top: 4em;
+    }
+
+    /*SECCION FOOTER*/
+    .pie-pagina {
+        width: 100%;
+        height: 6.25em;
+    }
+
+    .terminos-condiciones {
+        position: relative;
+        left: -3em;
+        font-family: poppins, sans-serif;
+        font-size: 14pt;
+    }
+
+    .copy {
+        position: relative;
+        right: -10em;
+        font-size: 14pt;
+    }
+
+    /*BOTON FLOTANTE WHATSAPP*/
+    .btn-wsp {
+        width: 2.5em;
+        height: 2.5em;
+        line-height: 2.5em;
+        bottom: 1em;
+        right: 1em;
+        font-size: 35pt;
+        border-radius: 3.125em;
+    }
+
 }
