@@ -30,21 +30,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Enviar el correo electrónico
         if (mail($destinatario, $asunto, $mensaje, $headers)) {
             // Si el correo se envía correctamente, puedes redirigir a una página de éxito
-            header('Location: gracias.html');
+            header('Location:gracias.html');
             exit;
         } else {
             // Si hay un error en el envío del correo, puedes redirigir a una página de error
-            header('Location: error.html');
+            header('Location:error.html');
             exit;
         }
     } else {
         // Redirigir a una página de error si los campos requeridos están vacíos
-        header('Location: error.html');
+        header('Location:error.html');
         exit;
     }
 } else {
     // Si no se han enviado datos mediante POST, redirigir a una página de error
-    header('Location: error.html');
+    header('Location:error.html');
     exit;
 }
 ?>
