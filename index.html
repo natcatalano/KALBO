@@ -69,7 +69,7 @@
       <p class="subtitulo-formulario">Adquirilo hoy mismo.</p>
       <p class="parrafo-formulario">Llená el siguiente formulario, y un agente se pondrá en contacto para asesorarte a
         la brevedad.</p>
-      <form id="contactForm" action="enviar_mail.php" method="post">
+      <form id="contactForm" action="./enviar_mail.php" method="POST">
         <div class="info">
           <label for="lead-name"></label>
           <input type="text" name="lead-name" id="lead-name" placeholder="NOMBRE COMPLETO" required>
@@ -349,7 +349,7 @@
         var correo = $('#lead-email').val();
         var telefono = $('#lead-tel').val();
 
-        var url = 'enviar_mail.php'
+        var url = './enviar_mail.php'
 
         $.ajax({
           url: url,
