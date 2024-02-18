@@ -5,17 +5,27 @@ const swiper = new Swiper(".swiper", {
 		prevEl: ".swiper-button-prev",
 	},
 	slidesPerView: 3,
-  slilidesPerGroup: 1,
+	slidesPerGroup: 1,
 	spaceBetween: 30,
-	
+
 	breakpoints: {
 
-		1600 : {
+		360: {
+			slidesPerView: 1,
+			slidesPerGroup: 1,
+			},
+
+		1300: {
 			slidesPerView: 3,
-			slilidesPerGroup: 1,
+			slidesPerGroup: 1,
+		},
+
+		1600: {
+			slidesPerView: 3,
+			slidesPerGroup: 1,
 			spaceBetween: 90
 		},
-	}
+	},
 
 });
 
@@ -65,3 +75,30 @@ $(document).ready(function () {
 		swiper.slideTo(0);
 	}
 });
+
+// configuracion menu hamburguesa
+const menu = document.querySelector(".navegacion");
+const menuItems = document.querySelectorAll(".boton-navegacion");
+const hamburger = document.querySelector(".hamburger");
+const closeIcon = document.querySelector(".closeIcon");
+const menuIcon = document.querySelector(".menuIcon");
+
+function toggleMenu() {
+	if (menu.classList.contains("showMenu")) {
+		menu.classList.remove("showMenu");
+		closeIcon.style.display = "none";
+		menuIcon.style.display = "block";
+	} else {
+		menu.classList.add("showMenu");
+		closeIcon.style.display = "block";
+		menuIcon.style.display = "none";
+	}
+}
+
+hamburger.addEventListener("click", toggleMenu);
+
+menuItems.forEach(
+	function (menuItem) {
+		menuItem.addEventListener("click", toggleMenu);
+	}
+)

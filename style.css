@@ -5,7 +5,7 @@
 }
 
 html,
-body{
+body {
     position: relative;
     height: 100%;
     overflow-x: hidden;
@@ -108,12 +108,16 @@ main {
     background-color: transparent;
 }
 
+nav button {
+    display: none;
+}
+
 /*SECCION HERO*/
 .hero {
     background-image: url(hero_background.jpg);
     background-size: cover;
     width: 100%;
-    height: 30em;
+    height: 31em;
 }
 
 .phone-hecho {
@@ -158,19 +162,19 @@ main {
 }
 
 .combo {
-    font-family: 'directv_curvebold';
+    font-family: directv_curvebold;
     font-size: 30pt;
     color: white;
 }
 
 .descuento-combo {
-    font-family: 'directv_curvebold';
+    font-family: directv_curvebold;
     Font-size: 20pt;
     color: #ffc60b;
 }
 
 .duracion-combo {
-    font-family: 'poppins', sans-serif;
+    font-family: directv_curveregular;
     font-weight: 400;
     font-size: 12pt;
     Color: white;
@@ -184,7 +188,7 @@ main {
 }
 
 .descripcion-combo {
-    font-family: 'poppins', sans-serif;
+    font-family: directv_curveregular;
     font-size: 12pt;
     color: white;
     margin-top: 0.625em;
@@ -245,7 +249,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 32em;
+    height: 31.3em;
     align-items: center;
     justify-content: center;
     background: linear-gradient(0deg, #1b1b32, #012169);
@@ -360,7 +364,7 @@ input {
 .category_item {
     width: 10em;
     height: 3em;
-    margin: 1em;
+    margin: 1em auto;
     border-radius: 10px;
     border: none;
     display: inline-flex;
@@ -388,8 +392,8 @@ input {
 .swiper-button-next {
     position: absolute;
     top: 50%;
-    width: 1em;
-    height: 1em;
+    width: 0.5rem;
+    height: 0.5rem;
 }
 
 .swiper-button-prev {
@@ -425,7 +429,7 @@ input {
 }
 
 .swiper-slide h3 {
-    font-family: 'poppins', sans-serif;
+    font-family: directv_curveregular;
     font-size: 12pt;
     color: #00ADEE;
 }
@@ -440,7 +444,7 @@ input {
 
 .swiper-slide p {
     margin: 0.5em;
-    font-family: 'poppins', sans-serif;
+    font-family: directv_curveregular;
     font-size: 9pt;
     text-align: center;
     color: #fff;
@@ -455,7 +459,7 @@ input {
     background: linear-gradient(0deg, #012169, #00ADEE);
     color: #fff;
     font-size: 9.5pt;
-    font-family: 'poppins', sans-serif;
+    font-family: directv_curveregular;
 }
 
 .swiper-slide button:hover {
@@ -546,10 +550,10 @@ input {
 }
 
 .imagen-cuenta-final {
-position: absolute;
-top: 138em;
-width: auto;
-height: 20em;
+    position: absolute;
+    top: 138em;
+    width: auto;
+    height: 20em;
 
 }
 
@@ -761,26 +765,26 @@ height: 20em;
         font-size: 20pt;
         color: #00acfb;
     }
-    
+
     .sub-combo {
         font-family: 'poppins', sans-serif;
         font-weight: 400;
         font-size: 20pt;
         color: white;
     }
-    
+
     .combo {
         font-family: 'directv_curvebold';
         font-size: 40pt;
         color: white;
     }
-    
+
     .descuento-combo {
         font-family: 'directv_curvebold';
         Font-size: 26pt;
         color: #ffc60b;
     }
-    
+
     .duracion-combo {
         font-family: 'poppins', sans-serif;
         font-weight: 400;
@@ -788,13 +792,13 @@ height: 20em;
         Color: white;
         margin-bottom: 0.625em;
     }
-    
+
     .linea-hero {
         justify-content: center;
         width: 12em;
         border-color: #00acfb;
     }
-    
+
     .descripcion-combo {
         font-family: 'poppins', sans-serif;
         font-size: 18pt;
@@ -802,13 +806,13 @@ height: 20em;
         margin-top: 0.625em;
         margin-bottom: 0.625em;
     }
-    
+
     .tarjetas {
         display: flex;
         flex-direction: row;
         gap: 0.625em;
     }
-    
+
     .tarjeta-combo {
         justify-content: center;
         align-items: center;
@@ -816,7 +820,7 @@ height: 20em;
         height: 8em;
         border-radius: 0.625em;
     }
-    
+
     .boton-combo {
         border: none;
         font-weight: 500;
@@ -850,18 +854,18 @@ height: 20em;
         font-family: directv_curvebold;
         font-size: 36pt;
     }
-    
+
     .subtitulo-formulario {
         position: relative;
         top: -0.5em;
     }
-    
+
     .parrafo-formulario {
         position: relative;
         top: 0.5em;
         font-size: 16pt;
     }
-    
+
     form {
         position: relative;
         top: 2em;
@@ -1131,4 +1135,435 @@ height: 20em;
         border-radius: 3.125em;
     }
 
+}
+
+@media screen and (max-width: 360px) and (orientation: portrait) {
+    main {
+        padding-top: 7.5rem;
+    }
+
+    /*SECCION HEADER*/
+    .header-top {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 0.05rem;
+        width: 100%;
+        height: 2.5em;
+    }
+
+    .titulo-header {
+        font-size: 7.3pt;
+    }
+
+    .tel-up {
+        font-size: 7.3pt;
+    }
+
+    /*SECCIÓN NAVEGACION*/
+    .nav-section {
+        position: fixed;
+        top: -0.6rem;
+        width: 100%;
+        height: 5em;
+    }
+
+    .logo {
+        position: relative;
+        left: 1.5em;
+        width: 6em;
+        height: auto;
+    }
+
+    .link-navegacion {
+        display: block;
+        font-size: 1rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    .link-navegacion:hover {
+        text-decoration: underline;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 1.65rem;
+        right: 1.5rem;
+        border: none;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .closeIcon {
+        display: none;
+    }
+
+    .navegacion {
+        position: fixed;
+        transform: translateY(-110%);
+        transition: transform 0.4s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #012169;
+        color: #000;
+        list-style: none;
+        padding-top: 0.5rem;
+    }
+
+    .showMenu {
+        transform: translateY(0);
+        height: 20rem;
+        width: 100%;
+    }
+
+    .boton-telefono {
+        display: none;
+    }
+
+    nav button {
+        display: flex;
+    }
+
+    /*SECCION HERO*/
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        background-size: cover;
+        width: 100%;
+        height: 38.7rem;
+    }
+
+    .phone-hecho {
+        top: 2.5rem;
+        left: 2.7rem;
+        width: auto;
+        height: 8rem;
+    }
+
+    .cuadro-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: relative;
+        top: 1rem;
+        left: 0.3rem;
+    }
+
+
+    .publi-combo {
+        font-family: directv_curveregular;
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: #00acfb;
+    }
+
+    .sub-combo {
+        font-family: directv_curveregular;
+        font-weight: 400;
+        font-size: 20pt;
+        color: white;
+    }
+
+    .linea-hero {
+        width: 8rem;
+        border: #012169 1px solid;
+    }
+
+    .descripcion-combo {
+        font-family: directv_curveregular;
+        color: white;
+        margin: 0.625rem;
+    }
+
+    .tarjetas {
+        display: flex;
+        flex-direction: row;
+        gap: 0.625rem;
+    }
+
+    .tarjeta-combo {
+        justify-content: center;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 1rem;
+    }
+
+    .boton-combo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        text-transform: uppercase;
+        margin: 1rem;
+        background-color: #00ADEE;
+        border-radius: 2rem;
+        width: 60%;
+        height: 3rem;
+    }
+
+    .link-combo {
+        font-family: directv_curveregular;
+        font-weight: 400;
+        font-size: 1.4rem;
+    }
+
+    /*SECCION FORMULARIO*/
+    .formulario {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height: 38.72rem;
+        padding: 2rem;
+    }
+
+    .titulo-formulario {
+        font-size: 1.3rem;
+        margin: 0.25rem;
+    }
+
+    .subtitulo-formulario {
+        margin: 0.25rem;
+        font-size: 1.2rem;
+    }
+
+    .parrafo-formulario {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.2rem;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    form {
+        width: 90%;
+        margin: 1rem;
+    }
+
+    input {
+        font-size: 1rem;
+        width: 14rem;
+        height: 2em;
+    }
+
+    .btn-form {
+        width: 8rem;
+        height: 3em;
+    }
+
+    .autorizacion {
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+    /*SECCION PREMIUM*/
+    .premium {
+
+        width: 100%;
+        height: 12rem;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .titulo-premium {
+        position: relative;
+        top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .subtitulo-premium {
+        position: relative;
+        top: 1.2rem;
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 0.1rem;
+    }
+
+    .parrafo-premium {
+        position: relative;
+        top: 1.04rem;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /*CARRUSEL*/
+    .carrusel {
+        position: relative;
+        right: 2.1rem;
+        bottom: 4rem;
+        height: 22rem;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .category_item {
+        width: auto;
+        height: 2rem;
+        padding: 0.4rem;
+        font-size: 0.7rem;
+    }
+
+    .category_item[category="all"] {
+        display: none;
+    }
+
+    .swiper {
+        width: 85%;
+    }
+
+    .swiper-slide img {
+        height: 4rem;
+        margin: 0.2rem;
+    }
+
+    .swiper-slide h1 {
+        font-size: 1.3rem;
+    }
+
+    .swiper-slide h3 {
+        font-size: 1rem;
+    }
+
+    .swiper-slide p {
+        font-size: 0.7rem;
+    }
+
+    .swiper-slide button {
+        margin: 0.05rem;
+        width: 6rem;
+        height: 1.8rem;
+    }
+
+    /*SECCION FUTBOL*/
+    .futbol {
+        width: 100%;
+    }
+
+    .uefa-futbol {
+        display: none;
+    }
+
+    .descripcion-futbol {
+        position: relative;
+        top: 9rem;
+        right: 0.9rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .titulo-futbol {
+        font-size: 1.4rem;
+    }
+
+    .linea-futbol {
+        width: 7.5em;
+        margin: 1.25em 0 1.25em 0;
+    }
+
+    .subtitulo-futbol {
+        font-size: 0.75rem;
+    }
+
+    .contactar {
+        font-size: 1.3rem;
+    }
+
+    /*SECCION CUENTA*/
+    .cuenta-final {
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 24em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+    .imagen-cuenta-final {
+        top: 150rem;
+        width: 20rem;
+        height: auto;
+
+    }
+
+    .titulo-cuenta-final {
+        position: relative;
+        top: -0.35rem;
+        font-size: 1.6rem;
+    }
+
+    .subtitulo-cuenta-final {
+        text-align: center;
+        position: relative;
+        top: -0.85rem;
+        font-size: 1rem;
+        margin: 1em;
+    }
+
+    .botones-cuenta {
+        position: relative;
+        top: -0.5rem;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .boton-0800 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .boton-quiero {
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo-cuenta {
+        position: relative;
+        top: 2rem;
+    }
+
+    /*SECCION FOOTER*/
+
+    .pie-pagina {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 3rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .terminos-condiciones {
+        font-size: 0.7rem;
+    }
+
+    .copy {
+        font-size: 0.7rem;
+    }
+
+    /*BOTON FLOTANTE WHATSAPP*/
+    .btn-wsp {
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+        bottom: 1.5rem;
+        right: 1rem;
+        font-size: 1.8rem;
+        border-radius: 3.125em;
+    }
 }

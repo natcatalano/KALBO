@@ -9,9 +9,9 @@
   <link href="style.css" rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/fonts/fontello-a540fdbf/fontello-a540fdbf/css/fontello.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link href="./fonts/stylesheet.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
@@ -30,14 +30,18 @@
 
     <nav class="nav-section">
       <img class="logo" src="./img/LogoDTVa_a.png" alt="logo DirectTV Agente Autorizado">
-      <ul class="navegacion">
-        <li class="link-navegacion"><a class="boton-navegacion" href="#hero">INICIO</a></li>
-        <li class="link-navegacion"><a class="boton-navegacion" href="#cuenta-final">DIRECTV</a></li>
-        <li class="link-navegacion"><a class="boton-navegacion" href="#premium">PREMIUM</a></li>
-        <li class="link-navegacion"><a class="boton-navegacion" href="#formulario">CONTACTO</a></li>
-        <li class="link-navegacion"><a class="boton-telefono" href="https://api.whatsapp.com/send?phone=541178310764"
-            target="_blank">+54 9 11 7831-0764</a></li>
-      </ul>
+        <ul class="navegacion">
+          <li class="link-navegacion"><a class="boton-navegacion" href="#hero">INICIO</a></li>
+          <li class="link-navegacion"><a class="boton-navegacion" href="#cuenta-final">DIRECTV</a></li>
+          <li class="link-navegacion"><a class="boton-navegacion" href="#premium">PREMIUM</a></li>
+          <li class="link-navegacion"><a class="boton-navegacion" href="#formulario">CONTACTO</a></li>
+          <li class="link-navegacion"><a class="boton-telefono" href="https://api.whatsapp.com/send?phone=541178310764"
+              target="_blank">+54 9 11 7831-0764</a></li>
+        </ul>
+        <button class="hamburger">
+          <i class="menuIcon material-icons">menu</i>
+          <i class="closeIcon material-icons">close</i>
+        </button>
     </nav>
   </header>
 
@@ -69,20 +73,20 @@
       <p class="subtitulo-formulario">Adquirilo hoy mismo.</p>
       <p class="parrafo-formulario">Llená el siguiente formulario, y un agente se pondrá en contacto para asesorarte a
         la brevedad.</p>
-      <form id="contactForm" action="./enviar_mail.php" method="POST">
+      <form id="contactForm" action="https://formsubmit.co/el/yabega" method="POST">
         <div class="info">
           <label for="lead-name"></label>
-          <input type="text" name="lead-name" id="lead-name" placeholder="NOMBRE COMPLETO" required>
+          <input type="text" name="lead-name" id="lead-name" placeholder="Nombre Completo" required>
         </div>
 
         <div class="info">
           <label for="lead-email"></label>
-          <input type="email" name="lead-email" id="lead-email" placeholder="CORREO ELECTRÓNICO" required>
+          <input type="email" name="lead-email" id="lead-email" placeholder="Correo Electrónico" required>
         </div>
 
         <div class="info">
           <label for="lead-tel"></label>
-          <input type="tel" name="lead-tel" id="lead-tel" placeholder="TELÉFONO" required>
+          <input type="tel" name="lead-tel" id="lead-tel" placeholder="Teléfono" required>
         </div>
         <button class="btn-form">Enviar</button>
       </form>
@@ -105,7 +109,7 @@
       <!--Botones seleccion de categorias-->
       <div class="category_list">
         <a class="category_item" category="all">Todo</a>
-        <a class="category_item" category="series">Series & Peliculas</a>
+        <a class="category_item" category="series">Series y Peliculas</a>
         <a class="category_item" category="mundo">Mundo</a>
         <a class="category_item" category="deportes">Deportes</a>
         <a class="category_item" category="adultos">Adultos</a>
@@ -339,43 +343,31 @@
     <p class="copy">&#169; 2024. Agente Autorizado - Todos los derechos reservados.</p>
   </footer>
   <!--BOTON FLOTANTE WHATSAPP-->
-  <a href="https://api.whatsapp.com/send?phone=541178310764" class="btn-wsp" target="_blank"><i class="icon-whatsapp"></i></a>
+  <a href="https://api.whatsapp.com/send?phone=541178310764" class="btn-wsp" target="_blank"><i
+      class="icon-whatsapp"></i></a>
   <script>
-    $(document).ready(function () {
-      $('#contactForm').submit(function (e) {
-        e.preventDefault();
-
-        var nombre = $('#lead-name').val();
-        var correo = $('#lead-email').val();
-        var telefono = $('#lead-tel').val();
-
-        var url = './enviar_mail.php'
-
-        $.ajax({
-          url: url,
-          method: 'POST',
-          data: {
-            nombre: nombre,
-            correo: correo,
-            telefono: telefono
-          },
-          success: function (response) {
-            alert('¡Gracias! Tu formulario ha sido enviado correctamente.');
-          },
-          error: function (xhr, status, error) {
-            console.error(error);
-            alert('Ocurrió un error al enviar el formulario. Por favor, inténtalo de nuevo más tarde.');
-          }
-        });
-      });
-    });
-
     document.getElementById("contactForm").addEventListener("submit", function (event) {
       // Limpia los campos de entrada después de enviar el formulario
       document.getElementById("lead-name").value = "";
       document.getElementById("lead-email").value = "";
       document.getElementById("lead-tel").value = "";
     });
+
+    var url = "https://formsubmit.co/el/yabega"
+
+    $.ajax({
+      method: 'POST',
+      url: url,
+      dataType: 'json',
+      accepts: 'application/json',
+      data: {
+        name: "FormSubmit",
+        message: "I'm from Devro LABS"
+      },
+      success: (data) => console.log(data),
+      error: (err) => console.log(err)
+    });
+
   </script>
 </body>
 
