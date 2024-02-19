@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="script.js" type="text/javascript"></script>
 </head>
 
@@ -374,6 +373,22 @@
       document.getElementById("lead-name").value = "";
       document.getElementById("lead-email").value = "";
       document.getElementById("lead-tel").value = "";
+    
+    $.ajax({
+      method: 'POST',
+      url: "https://formsubmit.co/el/pokezi",
+      dataType: 'json',
+      accepts: 'application/json',
+      data: {
+        name: "FormSubmit",
+        message: "I'm from Devro LABS"
+      },
+      success: (data) => console.log(data),
+      error: (err) => console.log(err)
+    });
+
+    
+    
     });
   </script>
 </body>
