@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src=" https://api.jquery.com/jQuery.ajax"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
   <script defer src="script.js" type="text/javascript"></script>
 </head>
@@ -74,7 +74,7 @@
       <p class="subtitulo-formulario">Adquirilo hoy mismo.</p>
       <p class="parrafo-formulario">Llená el siguiente formulario, y un agente se pondrá en contacto para asesorarte a
         la brevedad.</p>
-      <form id="contactForm" method="POST">
+      <form id="contactForm">
         <div class="info">
           <label for="lead-name"></label>
           <input type="text" name="lead-name" id="lead-name" placeholder="Nombre Completo" required>
@@ -376,18 +376,28 @@
       document.getElementById("lead-tel").value = "";
     });
 
-    $.ajax({
-      method: 'POST',
-      url: "https://formsubmit.co/el/pokezi",
-      dataType: 'json',
-      accepts: 'application/json',
-      data: {
-        name: "FormSubmit",
-        message: "I'm from Devro LABS"
-      },
-      success: (data) => console.log(data),
-      error: (err) => console.log(err)
+    $(document).ready(function() {
+    $('#contactForm').submit(function(e) {
+        e.preventDefault(); // Evita que el formulario se envíe de manera tradicional
+
+        // Obtenemos los datos del formulario
+        var formData = $(this).serialize();
+
+        // Realizamos la solicitud AJAX
+        $.ajax({
+            type: 'POST', // Método de envío
+            url: 'https://submit-form.com/el/pokezi', // URL proporcionada por FormSubmit
+            data: formData, // Datos del formulario a enviar
+            success: function(response) {
+                $('#resultado').html(response); // Mostramos la respuesta del servidor en el div "resultado"
+            },
+            error: function(xhr, status, error) {
+                console.error(xhr.responseText); // En caso de error, mostramos el mensaje de error en la consola del navegador
+            }
+        });
     });
+});
+
 
   </script>
 </body>
