@@ -74,7 +74,7 @@
       <p class="subtitulo-formulario">Adquirilo hoy mismo.</p>
       <p class="parrafo-formulario">Llená el siguiente formulario, y un agente se pondrá en contacto para asesorarte a
         la brevedad.</p>
-      <form id="contactForm" action="https://formsubmit.co/el/yabega" method="POST">
+      <form id="contactForm" action="https://formsubmit.co/el/pokezi" method="POST">
         <div class="info">
           <label for="lead-name"></label>
           <input type="text" name="lead-name" id="lead-name" placeholder="Nombre Completo" required>
@@ -340,7 +340,8 @@
   <!--SECCÍON PIE DE PAGINA-->
   <footer class="pie-pagina">
     <p class="terminos-condiciones"><a class="terminos-condiciones" id="mostrar-terminos" href="#">TÉRMINOS y
-        CONDICIONES - POLíTICAS DE PRIVACIDAD |</a><a class="terminos-condiciones" id="mostrar-privacidad" href="#"> TÉRMINOS Y CONDICIONES COMBO+</a></p>
+        CONDICIONES - POLíTICAS DE PRIVACIDAD |</a><a class="terminos-condiciones" id="mostrar-privacidad" href="#">
+        TÉRMINOS Y CONDICIONES COMBO+</a></p>
     <p class="copy">&#169; 2024. Agente Autorizado - Todos los derechos reservados.</p>
   </footer>
 
@@ -348,7 +349,8 @@
   <div id="ventana-desplegable" class="oculto">
     <div class="contenido">
       <h2>Términos y Condiciones - Política de Privacidad</h2>
-      <embed src="./terminos-y-condiciones-dtv/terminos-y-condiciones-dtv.pdf" type="application/pdf" width="100%" height="1000px">
+      <embed src="./terminos-y-condiciones-dtv/terminos-y-condiciones-dtv.pdf" type="application/pdf" width="100%"
+        height="1000px">
       <a href="#" id="cerrar-ventana">Cerrar</a>
     </div>
   </div>
@@ -356,7 +358,8 @@
   <div id="ventana-desplegable2" class="oculto">
     <div class="contenido-privacidad">
       <h2>Términos y Condiciones Combo+</h2>
-      <embed src="./terminos-y-condiciones-dtv/Terminos yCondiciones-Combo-Star-Disney-DTV-MiDIRECTV.pdf" type="application/pdf" width="100%" height="1000px" readonly>
+      <embed src="./terminos-y-condiciones-dtv/Terminos yCondiciones-Combo-Star-Disney-DTV-MiDIRECTV.pdf"
+        type="application/pdf" width="100%" height="1000px" readonly>
       <a href="#" id="cerrar-ventana2">Cerrar</a>
     </div>
   </div>
@@ -372,22 +375,6 @@
       document.getElementById("lead-email").value = "";
       document.getElementById("lead-tel").value = "";
     });
-
-    var url = "https://formsubmit.co/el/yabega"
-
-    $.ajax({
-      method: 'POST',
-      url: url,
-      dataType: 'json',
-      accepts: 'application/json',
-      data: {
-        name: "FormSubmit",
-        message: "I'm from Devro LABS"
-      },
-      success: (data) => console.log(data),
-      error: (err) => console.log(err)
-    });
-
   </script>
 </body>
 
