@@ -674,7 +674,7 @@ input {
     font-size: 9pt;
 }
 
-#ventana-desplegable, 
+#ventana-desplegable,
 #ventana-desplegable2 {
     background-color: #fff;
     position: fixed;
@@ -696,7 +696,7 @@ input {
     overflow-x: hidden;
 }
 
-#cerrar-ventana, 
+#cerrar-ventana,
 #cerrar-ventana2 {
     display: block;
     text-align: center;
@@ -788,7 +788,7 @@ input {
     .phone-hecho {
         position: relative;
         left: 5%;
-        top: 20em;
+        top: 12em;
         width: auto;
         height: 30em;
     }
@@ -1086,27 +1086,36 @@ input {
     }
 
     .imagen-cuenta-final {
+        width: 60rem;
+        height: auto;
         position: absolute;
-        top: 215em
+        top: 220rem
     }
 
     .titulo-cuenta-final {
         position: relative;
-        top: 2.5em;
+        top: 5rem;
         font-size: 40pt;
     }
 
     .subtitulo-cuenta-final {
         position: relative;
-        top: 3em;
+        top: 4rem;
         margin: 1em;
     }
 
-    .boton-0800 {
-        font-size: 24pt;
+    .botones-cuenta {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
         position: relative;
-        top: 0.1em;
-        left: -0.5em;
+        top: -3rem;
+    }
+
+    .boton-0800 {
+        font-size: 2rem;
         width: 15em;
         height: 2.3em;
         border-radius: 4em;
@@ -1115,18 +1124,15 @@ input {
     .link-0800 {
         font-family: poppins, sans-serif;
         font-weight: 500;
-        font-size: 24pt;
+        font-size: 2rem;
         text-decoration: none;
         color: white;
     }
 
     .boton-quiero {
         font-family: directv_curvemedium;
-        font-size: 24pt;
+        font-size: 2rem;
         font-weight: 400;
-        position: relative;
-        top: 0.54em;
-        right: -0.5em;
         width: 15em;
         height: 2.3em;
         border-radius: 2em;
@@ -1135,14 +1141,14 @@ input {
     .link-quiero {
         font-family: poppins, sans-serif;
         font-weight: 600;
-        font-size: 24pt;
+        font-size: 2rem;
         text-decoration: none;
         color: white;
     }
 
     .logo-cuenta {
         position: relative;
-        top: 6em;
+        top: 0.5rem;
         width: 10em;
         height: auto;
         margin-top: 4em;
@@ -1180,7 +1186,7 @@ input {
 
 }
 
-@media screen and (max-width: 360px) and (orientation: portrait) {
+@media screen and (360px <= width < 740px ) and (orientation: portrait) {
     main {
         padding-top: 7.5rem;
     }
@@ -1525,13 +1531,13 @@ input {
     /*SECCION CUENTA*/
     .cuenta-final {
         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 24em;
-    background-repeat: no-repeat;
-    background-size: contain;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 24em;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
 
     .imagen-cuenta-final {
@@ -1586,17 +1592,39 @@ input {
         display: flex;
         flex-direction: column;
         width: auto;
-        height: 3rem;
+        height: 3.5rem;
         margin: 0;
         padding: 0;
     }
 
     .terminos-condiciones {
-        font-size: 0.7rem;
+        font-size: 0.47rem;
+    }
+
+    .contenido,
+    .contenido-privacidad {
+        text-align: center;
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .contenido h2 {
+        font-size: 1rem;
+    }
+
+    .contenido embed {
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto; 
     }
 
     .copy {
-        font-size: 0.7rem;
+        font-size: 0.47rem;
     }
 
     /*BOTON FLOTANTE WHATSAPP*/
