@@ -1156,20 +1156,19 @@ input {
 
     /*SECCION FOOTER*/
     .pie-pagina {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
         width: 100%;
         height: 6.25em;
     }
 
     .terminos-condiciones {
-        position: relative;
-        left: -3em;
         font-family: poppins, sans-serif;
         font-size: 14pt;
     }
 
     .copy {
-        position: relative;
-        right: -10em;
         font-size: 14pt;
     }
 
@@ -1302,9 +1301,7 @@ input {
         justify-content: center;
         align-items: center;
         align-content: center;
-        position: relative;
-        top: 1rem;
-        left: 0.3rem;
+        position: inherit;
     }
 
 
@@ -1496,6 +1493,10 @@ input {
 
     /*SECCION FUTBOL*/
     .futbol {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
@@ -1504,11 +1505,8 @@ input {
     }
 
     .descripcion-futbol {
-        position: relative;
-        top: 9rem;
-        right: 0.9rem;
-        margin: 0;
-        padding: 0;
+        position: inherit;
+
     }
 
     .titulo-futbol {
@@ -1604,19 +1602,21 @@ input {
     .contenido,
     .contenido-privacidad {
         text-align: center;
-        max-width: 300px;
+        max-width: 600px;
         width: 100%;
         height: auto;
         margin: 0 auto;
         overflow-x: hidden;
     }
 
-    .contenido h2 {
+    .contenido h2, 
+    .contenido-privacidad h2 {
         font-size: 1rem;
     }
 
-    .contenido embed {
-        max-width: 300px;
+    .contenido embed, 
+    .contenido-privacidad embed {
+        max-width: 600px;
         width: 100%;
         height: auto;
         display: block;
