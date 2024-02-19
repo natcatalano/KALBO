@@ -6,17 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="DirectTV Agente Autorizado">
   <title>DIRECTV Argentina | Agente Autorizado</title>
-  <link href="./style.css" rel='stylesheet' type='text/css'>
+  <link href="style.css" rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/fonts/fontello-a540fdbf/fontello-a540fdbf/css/fontello.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link href="./fonts/stylesheet.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./script.js" type="text/javascript"></script>
+  <script defer src="script.js" type="text/javascript"></script>
 </head>
 
 
@@ -38,6 +38,10 @@
         <li class="link-navegacion"><a class="boton-telefono" href="https://api.whatsapp.com/send?phone=541178310764"
             target="_blank">+54 9 11 7831-0764</a></li>
       </ul>
+      <button class="hamburger">
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+      </button>
     </nav>
   </header>
 
@@ -69,20 +73,20 @@
       <p class="subtitulo-formulario">Adquirilo hoy mismo.</p>
       <p class="parrafo-formulario">Llená el siguiente formulario, y un agente se pondrá en contacto para asesorarte a
         la brevedad.</p>
-      <form id="contactForm" action="./enviar_mail.php" method="post">
+      <form id="contactForm" action="https://formsubmit.co/el/yabega" method="POST">
         <div class="info">
           <label for="lead-name"></label>
-          <input type="text" name="lead-name" id="lead-name" placeholder="NOMBRE COMPLETO" required>
+          <input type="text" name="lead-name" id="lead-name" placeholder="Nombre Completo" required>
         </div>
 
         <div class="info">
           <label for="lead-email"></label>
-          <input type="email" name="lead-email" id="lead-email" placeholder="CORREO ELECTRÓNICO" required>
+          <input type="email" name="lead-email" id="lead-email" placeholder="Correo Electrónico" required>
         </div>
 
         <div class="info">
           <label for="lead-tel"></label>
-          <input type="tel" name="lead-tel" id="lead-tel" placeholder="TELÉFONO" required>
+          <input type="tel" name="lead-tel" id="lead-tel" placeholder="Teléfono" required>
         </div>
         <button class="btn-form">Enviar</button>
       </form>
@@ -105,7 +109,7 @@
       <!--Botones seleccion de categorias-->
       <div class="category_list">
         <a class="category_item" category="all">Todo</a>
-        <a class="category_item" category="series">Series & Peliculas</a>
+        <a class="category_item" category="series">Series y Peliculas</a>
         <a class="category_item" category="mundo">Mundo</a>
         <a class="category_item" category="deportes">Deportes</a>
         <a class="category_item" category="adultos">Adultos</a>
@@ -132,7 +136,7 @@
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Canales exclusivos.<br>Contenido online en DGO.<br>1 mes sin costo + 2 meses con
               -50%.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="series">
@@ -142,7 +146,7 @@
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Incluye HBO Max sin costo adicnional.<br>Contenido online en DGO.<br>El mejor
               contenido HBO.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="series">
@@ -152,7 +156,7 @@
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Disney+ y Star+.<br>Diversión para toda la familia,<br>donde quieras y cuando
               quieras.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <!--lista de mundo-->
@@ -162,7 +166,7 @@
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Disfruta de la tv india.<br>Peliculas, teleseries,<br>meditaciones y yoga.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="mundo">
@@ -171,7 +175,7 @@
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Las ultimas noticias, documentales.<br>Producciones de la TV japonesa.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="mundo">
@@ -180,7 +184,7 @@
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Disfruta toda la tv brasilera.<br>la mas variada programacion.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="mundo">
@@ -189,7 +193,7 @@
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">La mas variada programacion<br>de la television uruguaya.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <!--lista de deportes-->
@@ -200,7 +204,7 @@
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">14 partidos en vivo por fecha.<br>24 hs de programacion 24/7.<br>Todos los
               partidos con DGO.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="deportes">
@@ -210,7 +214,7 @@
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Disfrutá de 4 y 5 partidos por fecha.<br>Transmisiones en vivo y en
               directo.<br>Partidos de Bolivar de visitante.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="deportes">
@@ -220,7 +224,7 @@
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Contenidos deportivos de Paraguay.<br>6 partidos de cada fecha.<br>Emision de dos
               noticieros diarios.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="deportes">
@@ -230,7 +234,7 @@
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Disfrutá la temporada regular.<br>Hasta 7 partidos por dia.<br>Disfrutá de los
               mejores equipos.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="deportes">
@@ -240,7 +244,7 @@
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Amplia variedad de partidos.<br>Cobertura onnline de los juegos.<br>Incluiye play
               offs y finales.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <!--lista de adultos-->
@@ -250,7 +254,7 @@
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Líder en entretenimiento 18+.<br>Bloque de 2 horas PPV.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="adultos">
@@ -259,7 +263,7 @@
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">contenido para disfrutar en pareja.<br>Bloque de 2 horas PPV.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="adultos">
@@ -268,7 +272,7 @@
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">La programacion mas audaz.<br>Bloque de 2 horas PPV.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="adultos">
@@ -278,7 +282,7 @@
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Variedad de XTSY y Hustler TV.<br>Acceso online a XSTYNow, sin costo.<br>2 meses
               al 50%.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="adultos">
@@ -288,7 +292,7 @@
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Entretenimiento para adultos.<br>Contenido online en HOTGO.TV.<br>1 mes gratis +
               2 meses al 50%.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
           <div class="swiper-slide" category="adultos">
@@ -297,7 +301,7 @@
             <h3 class="subtitulo-tarjeta">ABONO MENSUAL</h3>
             <hr class="linea-tarjeta">
             <p class="parrafo-tarjeta">Peliculas x las mejores productoas.<br>Bloque de 2 horas PPV.</p>
-            <button class="btn-tarjeta">Contactar</button>
+            <button class="btn-tarjeta"><a href="#formulario">Contactar</a></button>
           </div>
 
         </div>
@@ -325,7 +329,7 @@
       <p class="subtitulo-cuenta-final">Comenzá a disfrutar de la evolución de la TV online en todas tus pantallas.</p>
       <div class="botones-cuenta">
         <button class="boton-0800"><a class="link-0800" href="https://api.whatsapp.com/send?phone=541178310764"
-            target="_blank">+54 9 117831-0764</a></button>
+            target="_blank">(+54) 9 117831-0764</a></button>
         <button class="boton-quiero"><a class="link-quiero" href="#formulario">Quiero que me llamen</a></button>
       </div>
       <img class="logo-cuenta" src="./img/LogoDTVa_a.png" alt="logo_dtv">
@@ -334,49 +338,76 @@
 
   <!--SECCÍON PIE DE PAGINA-->
   <footer class="pie-pagina">
-    <p class="terminos-condiciones"><a class="terminos-condiciones" href="">TÉRMINOS y CONDICIONES |</a><a
-        class="terminos-condiciones" href=""> POLÍTICAS DE PRIVACIDAD</a></p>
+    <p class="terminos-condiciones"><a class="terminos-condiciones" id="mostrar-terminos" href="#">TÉRMINOS y
+        CONDICIONES |</a><a class="terminos-condiciones" id="mostrar-privacidad" href="#"> POLÍTICAS DE
+        PRIVACIDAD</a></p>
     <p class="copy">&#169; 2024. Agente Autorizado - Todos los derechos reservados.</p>
   </footer>
+
+  <!--ventana desplegable terminos y condiciones-->
+  <div id="ventana-desplegable" class="oculto">
+    <div class="contenido">
+      <h2>Términos y condiciones</h2>
+      <!-- Contenido de los términos y condiciones -->
+      <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse doloribus impedit quos dicta, perspiciatis
+        voluptatum id molestiae expedita possimus ducimus nobis iure quisquam amet perferendis! Exercitationem rerum
+        aspernatur et distinctio.
+        Ut qui adipisci enim rerum eaque dolorum blanditiis in animi voluptate illum voluptatibus mollitia placeat iure
+        eos dolores iusto quis voluptas iste incidunt ad, tempore quae exercitationem doloribus? Fuga, dignissimos.
+        Unde, porro. Cupiditate illum dolorum aliquam placeat exercitationem. Facilis in dolorem quasi obcaecati
+        accusamus impedit officiis cupiditate molestiae nesciunt quae excepturi officia enim repellat facere, eligendi
+        nobis. Soluta, saepe quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis incidunt esse a
+        aliquid consequuntur impedit
+        unde deserunt facilis blanditiis fugiat harum quas, amet ipsum suscipit mollitia cumque soluta praesentium quos.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non lectus ac lectus viverra elementum.</p>
+      <a href="#" id="cerrar-ventana">Cerrar</a>
+    </div>
+  </div>
+
+  <div id="ventana-desplegable2" class="oculto">
+    <div class="contenido-privacidad">
+      <h2>Politica de privacidad</h2>
+      <!-- Contenido de los términos y condiciones -->
+      <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse doloribus impedit quos dicta, perspiciatis
+        voluptatum id molestiae expedita possimus ducimus nobis iure quisquam amet perferendis! Exercitationem rerum
+        aspernatur et distinctio.
+        Ut qui adipisci enim rerum eaque dolorum blanditiis in animi voluptate illum voluptatibus mollitia placeat iure
+        eos dolores iusto quis voluptas iste incidunt ad, tempore quae exercitationem doloribus? Fuga, dignissimos.
+        Unde, porro. Cupiditate illum dolorum aliquam placeat exercitationem. Facilis in dolorem quasi obcaecati
+        accusamus impedit officiis cupiditate molestiae nesciunt quae excepturi officia enim repellat facere, eligendi
+        nobis. Soluta, saepe quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis incidunt esse a
+        aliquid consequuntur impedit
+        unde deserunt facilis blanditiis fugiat harum quas, amet ipsum suscipit mollitia cumque soluta praesentium quos.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non lectus ac lectus viverra elementum.</p>
+      <a href="#" id="cerrar-ventana2">Cerrar</a>
+    </div>
+  </div>
+
   <!--BOTON FLOTANTE WHATSAPP-->
   <a href="https://api.whatsapp.com/send?phone=541178310764" class="btn-wsp" target="_blank"><i
       class="icon-whatsapp"></i></a>
+
   <script>
-    $(document).ready(function () {
-      $('#contactForm').submit(function (e) {
-        e.preventDefault();
-
-        var nombre = $('#lead-name').val();
-        var correo = $('#lead-email').val();
-        var telefono = $('#lead-tel').val();
-
-        var url = '/enviar_mail.php'
-
-        $.ajax({
-          url: url,
-          method: 'POST',
-          data: {
-            nombre: nombre,
-            correo: correo,
-            telefono: telefono
-          },
-          success: function (response) {
-            alert('¡Gracias! Tu formulario ha sido enviado correctamente.');
-            // Aquí puedes agregar cualquier otra acción que quieras realizar después de enviar el formulario
-          },
-          error: function (xhr, status, error) {
-            console.error(error);
-            alert('Ocurrió un error al enviar el formulario. Por favor, inténtalo de nuevo más tarde.');
-          }
-        });
-      });
-    });
-
     document.getElementById("contactForm").addEventListener("submit", function (event) {
       // Limpia los campos de entrada después de enviar el formulario
       document.getElementById("lead-name").value = "";
       document.getElementById("lead-email").value = "";
       document.getElementById("lead-tel").value = "";
+    });
+
+    var url = "https://formsubmit.co/el/yabega"
+
+    $.ajax({
+      method: 'POST',
+      url: url,
+      dataType: 'json',
+      accepts: 'application/json',
+      data: {
+        name: "FormSubmit",
+        message: "I'm from Devro LABS"
+      },
+      success: (data) => console.log(data),
+      error: (err) => console.log(err)
     });
 
   </script>
