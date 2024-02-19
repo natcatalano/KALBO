@@ -365,6 +365,7 @@ input {
     width: 10em;
     height: 3em;
     margin: 1em auto;
+    gap: 3em;
     border-radius: 10px;
     border: none;
     display: inline-flex;
@@ -456,14 +457,21 @@ input {
     margin: 1em;
     border: none;
     border-radius: 25px;
-    background: linear-gradient(0deg, #012169, #00ADEE);
+    background: linear-gradient(90deg, #dbf0f9, #00ADEE);
     color: #fff;
-    font-size: 9.5pt;
-    font-family: directv_curveregular;
+    font-size: 12pt;
+    font-family: directv_curvemedium;
+}
+
+.swiper-slide button a {
+    text-decoration: none;
+    color: #fff;
+
 }
 
 .swiper-slide button:hover {
-    background: linear-gradient(90deg, #00ADEE, #012169);
+    color: #fff;
+    background: linear-gradient(0deg, #00ADEE, #012169);
     cursor: pointer;
 }
 
