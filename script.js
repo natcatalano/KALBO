@@ -13,7 +13,7 @@ const swiper = new Swiper(".swiper", {
 		360: {
 			slidesPerView: 1,
 			slidesPerGroup: 1,
-			},
+		},
 
 		1300: {
 			slidesPerView: 3,
@@ -102,3 +102,27 @@ menuItems.forEach(
 		menuItem.addEventListener("click", toggleMenu);
 	}
 )
+
+// ventanas emergentes
+document.addEventListener('DOMContentLoaded', function () {
+	document.getElementById('mostrar-terminos').addEventListener('click', function (e) {
+		e.preventDefault();
+		document.getElementById('ventana-desplegable').style.display = 'block';
+	});
+
+	document.getElementById('cerrar-ventana').addEventListener('click', function (e) {
+		e.preventDefault();
+		document.getElementById('ventana-desplegable').style.display = 'none';
+	});
+
+	document.getElementById('mostrar-privacidad').addEventListener('click', function (e) {
+		e.preventDefault();
+		document.getElementById('ventana-desplegable2').style.display = 'block';
+	});
+
+	document.getElementById('cerrar-ventana2').addEventListener('click', function (e) {
+		e.preventDefault();
+		document.getElementById('ventana-desplegable2').style.display = 'none';
+	});
+
+});

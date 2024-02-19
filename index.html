@@ -30,18 +30,18 @@
 
     <nav class="nav-section">
       <img class="logo" src="./img/LogoDTVa_a.png" alt="logo DirectTV Agente Autorizado">
-        <ul class="navegacion">
-          <li class="link-navegacion"><a class="boton-navegacion" href="#hero">INICIO</a></li>
-          <li class="link-navegacion"><a class="boton-navegacion" href="#cuenta-final">DIRECTV</a></li>
-          <li class="link-navegacion"><a class="boton-navegacion" href="#premium">PREMIUM</a></li>
-          <li class="link-navegacion"><a class="boton-navegacion" href="#formulario">CONTACTO</a></li>
-          <li class="link-navegacion"><a class="boton-telefono" href="https://api.whatsapp.com/send?phone=541178310764"
-              target="_blank">+54 9 11 7831-0764</a></li>
-        </ul>
-        <button class="hamburger">
-          <i class="menuIcon material-icons">menu</i>
-          <i class="closeIcon material-icons">close</i>
-        </button>
+      <ul class="navegacion">
+        <li class="link-navegacion"><a class="boton-navegacion" href="#hero">INICIO</a></li>
+        <li class="link-navegacion"><a class="boton-navegacion" href="#cuenta-final">DIRECTV</a></li>
+        <li class="link-navegacion"><a class="boton-navegacion" href="#premium">PREMIUM</a></li>
+        <li class="link-navegacion"><a class="boton-navegacion" href="#formulario">CONTACTO</a></li>
+        <li class="link-navegacion"><a class="boton-telefono" href="https://api.whatsapp.com/send?phone=541178310764"
+            target="_blank">+54 9 11 7831-0764</a></li>
+      </ul>
+      <button class="hamburger">
+        <i class="menuIcon material-icons">menu</i>
+        <i class="closeIcon material-icons">close</i>
+      </button>
     </nav>
   </header>
 
@@ -338,13 +338,55 @@
 
   <!--SECCÍON PIE DE PAGINA-->
   <footer class="pie-pagina">
-    <p class="terminos-condiciones"><a class="terminos-condiciones" href="">TÉRMINOS y CONDICIONES |</a><a
-        class="terminos-condiciones" href=""> POLÍTICAS DE PRIVACIDAD</a></p>
+    <p class="terminos-condiciones"><a class="terminos-condiciones" id="mostrar-terminos" href="#">TÉRMINOS y
+        CONDICIONES |</a><a class="terminos-condiciones" id="mostrar-privacidad" href="#"> POLÍTICAS DE
+          PRIVACIDAD</a></p>
     <p class="copy">&#169; 2024. Agente Autorizado - Todos los derechos reservados.</p>
   </footer>
+
+  <!--ventana desplegable terminos y condiciones-->
+  <div id="ventana-desplegable" class="oculto">
+    <div class="contenido">
+      <h2>Términos y condiciones</h2>
+      <!-- Contenido de los términos y condiciones -->
+      <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse doloribus impedit quos dicta, perspiciatis
+        voluptatum id molestiae expedita possimus ducimus nobis iure quisquam amet perferendis! Exercitationem rerum
+        aspernatur et distinctio.
+        Ut qui adipisci enim rerum eaque dolorum blanditiis in animi voluptate illum voluptatibus mollitia placeat iure
+        eos dolores iusto quis voluptas iste incidunt ad, tempore quae exercitationem doloribus? Fuga, dignissimos.
+        Unde, porro. Cupiditate illum dolorum aliquam placeat exercitationem. Facilis in dolorem quasi obcaecati
+        accusamus impedit officiis cupiditate molestiae nesciunt quae excepturi officia enim repellat facere, eligendi
+        nobis. Soluta, saepe quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis incidunt esse a
+        aliquid consequuntur impedit
+        unde deserunt facilis blanditiis fugiat harum quas, amet ipsum suscipit mollitia cumque soluta praesentium quos.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non lectus ac lectus viverra elementum.</p>
+      <a href="#" id="cerrar-ventana">Cerrar</a>
+    </div>
+  </div>
+
+  <div id="ventana-desplegable2" class="oculto">
+    <div class="contenido-privacidad">
+      <h2>Politica de privacidad</h2>
+      <!-- Contenido de los términos y condiciones -->
+      <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse doloribus impedit quos dicta, perspiciatis
+        voluptatum id molestiae expedita possimus ducimus nobis iure quisquam amet perferendis! Exercitationem rerum
+        aspernatur et distinctio.
+        Ut qui adipisci enim rerum eaque dolorum blanditiis in animi voluptate illum voluptatibus mollitia placeat iure
+        eos dolores iusto quis voluptas iste incidunt ad, tempore quae exercitationem doloribus? Fuga, dignissimos.
+        Unde, porro. Cupiditate illum dolorum aliquam placeat exercitationem. Facilis in dolorem quasi obcaecati
+        accusamus impedit officiis cupiditate molestiae nesciunt quae excepturi officia enim repellat facere, eligendi
+        nobis. Soluta, saepe quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis incidunt esse a
+        aliquid consequuntur impedit
+        unde deserunt facilis blanditiis fugiat harum quas, amet ipsum suscipit mollitia cumque soluta praesentium quos.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non lectus ac lectus viverra elementum.</p>
+      <a href="#" id="cerrar-ventana2">Cerrar</a>
+    </div>
+  </div>
+
   <!--BOTON FLOTANTE WHATSAPP-->
   <a href="https://api.whatsapp.com/send?phone=541178310764" class="btn-wsp" target="_blank"><i
       class="icon-whatsapp"></i></a>
+
   <script>
     document.getElementById("contactForm").addEventListener("submit", function (event) {
       // Limpia los campos de entrada después de enviar el formulario
