@@ -125,4 +125,20 @@ document.addEventListener('DOMContentLoaded', function () {
 		document.getElementById('ventana-desplegable2').style.display = 'none';
 	});
 
+	// Obtener la altura del encabezado
+	const headerHeight = document.querySelector('header').offsetHeight;
+
+
+	// Configurar el desplazamiento suave para los enlaces de navegación
+	document.getElementsByClassName('boton-navegacion').forEach(anchor => {
+		anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+			const targetId = this.getAttribute('href');
+			const targetElement = document.querySelector(targetId);
+			targetElement.scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+	});
+
 });
