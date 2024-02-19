@@ -1281,8 +1281,8 @@ input {
     /*SECCION HERO*/
     .hero {
         display: flex;
-        flex-wrap: wrap;
-        align-content: center;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         background-size: cover;
         width: 100%;
@@ -1290,17 +1290,14 @@ input {
     }
 
     .phone-hecho {
-        top: 2.5rem;
-        left: 2.7rem;
+    position: relative;
+    top: 1.5rem;
+    left: 0.02rem;
         width: auto;
         height: 8rem;
     }
 
     .cuadro-hero {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
         position: inherit;
     }
 
