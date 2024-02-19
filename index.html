@@ -373,7 +373,8 @@
       document.getElementById("lead-name").value = "";
       document.getElementById("lead-email").value = "";
       document.getElementById("lead-tel").value = "";
-    
+    });
+
     $.ajax({
       method: 'POST',
       url: "https://formsubmit.co/el/pokezi",
@@ -387,9 +388,6 @@
       error: (err) => console.log(err)
     });
 
-    
-    
-    });
   </script>
 </body>
 
