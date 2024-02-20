@@ -126,3 +126,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 });
+
+//limpia los campos de datos despues de enviarlos 
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+	// Limpia los campos de entrada después de enviar el formulario
+	document.getElementById("name").value = "";
+	document.getElementById("email").value = "";
+	document.getElementById("tel").value = "";
+	    
+});
