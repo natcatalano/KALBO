@@ -7,7 +7,7 @@
   <meta name="description" content="DirectTV Agente Autorizado">
   <title>DIRECTV Argentina | Agente Autorizado</title>
   <link href="style.css" rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/fonts/fontello-a540fdbf/fontello-a540fdbf/css/fontello.css">
+  <link rel="stylesheet" href="/fonts/fontello-a540fdbf/fontello-a540fdbf/font/fontello.woff">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
   <link href="./fonts/stylesheet.css" rel="stylesheet" type="text/css">
@@ -16,7 +16,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-  <script defer src="script.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
+  <script src="enviar-form.js" type="text/javascript"></script>
 </head>
 
 
@@ -74,20 +75,20 @@
       <p class="subtitulo-formulario">Adquirilo hoy mismo.</p>
       <p class="parrafo-formulario">Llená el siguiente formulario, y un agente se pondrá en contacto para asesorarte a
         la brevedad.</p>
-      <form id="contactForm" action="./PHPMailer/enviar-mail.php" method="POST">
+      <form id="contactForm" action="enviar-correo.php" method="POST">
         <div class="info">
           <label for="name"></label>
-          <input type="text" name="name" id="name" placeholder="Nombre Completo" required>
+          <input type="text" name="name" id="name" placeholder="Nombre Completo" autocomplete="name" required>
         </div>
 
         <div class="info">
           <label for="email"></label>
-          <input type="email" name="email" id="email" placeholder="Correo Electrónico" required>
+          <input type="email" name="email" id="email" placeholder="Correo Electrónico" autocomplete="email" required>
         </div>
 
         <div class="info">
           <label for="tel"></label>
-          <input type="tel" name="tel" id="tel" placeholder="Teléfono" required>
+          <input type="tel" name="telefono" id="tel" placeholder="Teléfono" autocomplete="on" required>
         </div>
 
         <button class="btn-form">Enviar</button>
