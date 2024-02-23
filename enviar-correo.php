@@ -13,29 +13,34 @@ $mail = new PHPMailer(true);
 
 try {
     //Server settings
-    $mail->SMTPDebug = 2;                      //Enable verbose debug output
+    $mail->SMTPDebug = 0;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.resend.com';                     //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'resend';                     //SMTP username
-    $mail->Password   = 're_WLMJJwhp_J4msocUXDGsLkG9e7G5QEMMk';                               //SMTP password
-    $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
-    $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Host = '';                     //Set the SMTP server to send through
+    $mail->SMTPAuth = true;                                   //Enable SMTP authentication
+    $mail->Username = '';                     //SMTP username
+    $mail->Password = '';                               //SMTP password
+    $mail->SMTPSecure = '';            //Enable implicit TLS encryption
+    $mail->Port = ;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('onboarding@resend.dev', 'Resend');
-    $mail->addAddress('brunopercara@gmail.com', 'Bruno');     //Add a recipient
-    $mail->addAddress('natcatalano@gmail.com');               //Name is optional
- 
+    $mail->setFrom('', '');
+    $mail->addAddress('', '');     //Add a recipient
+    $mail->addAddress('');               //Name is optional
 
-    //Content
-    $mail->isHTML(true); 
-    $mail->CharSet = 'UTF-8';                                 //Set email format to HTML
-    $mail->Subject = 'Test';
-    $mail->Body    = 'Has recibido un mensaje del formulario de contacto:<br><br>' .
-    '<strong>Nombre:</strong> ' . $_POST['name'] . '<br>' .
-    '<strong>Correo electrónico:</strong> ' . $_POST['email'] . '<br>' .
-    '<strong>Teléfono:</strong> ' . $_POST['telefono'];
+    // Validar y filtrar los datos del formulario
+    $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
+    $email = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_SANITIZE_EMAIL) : '';
+    $telefono = isset($_POST['telefono']) ? htmlspecialchars($_POST['telefono']) : '';
+
+    // Contenido del correo
+    $mail->isHTML(true);
+    $mail->CharSet = 'UTF-8';
+    $mail->Subject = 'Mensaje de contacto';
+    $mail->Body = 'Has recibido un mensaje del formulario de contacto:<br><br>' .
+        '<strong>Nombre:</strong> ' . $name . '<br>' .
+        '<strong>Correo electrónico:</strong> ' . $email . '<br>' .
+        '<strong>Teléfono:</strong> ' . $telefono;
+
 
     $mail->SMTPOptions = array(
         'ssl' => array(
@@ -43,15 +48,14 @@ try {
             'verify_peer_name' => false,
             'allow_self_signed' => true
         )
-    );        
+    );
 
-    // CORS headers
-    header("Access-Control-Allow-Origin: *");
-    header("Access-Control-Allow-Methods: POST");
-    header("Access-Control-Allow-Headers: Content-Type");
+    // Enviar correo electrónico
 
-    $mail->send();
-    echo 'Message has been sent';
-} catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-}
+        $mail->send();
+        echo 'Mensaje enviado exitosamente';
+    } catch (Exception $e) {
+        // Registrar errores en un archivo de registro
+        error_log("Error de envío de email: " . $e->getMessage(), 0);
+        echo "Mensaje no enviado. Por favor intente más tarde.";
+    }

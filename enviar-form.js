@@ -25,15 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function limpiarCampos() {
-    //limpia los campos de datos despues de enviarlos 
-    document.getElementById("contactForm").addEventListener("submit", function (event) {
-        // Previene el comportamiento predeterminado de enviar el formulario
-        event.preventDefault();
-
-        // Limpia los campos de entrada después de enviar el formulario
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("tel").value = "";
-    });
-
+    // Limpia los campos de entrada después de enviar el formulario
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("tel").value = "";
 }
