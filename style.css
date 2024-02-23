@@ -720,13 +720,12 @@ input {
     background: #0df053;
     border-radius: 3.125em;
     text-align: center;
-    font-size: 24pt;
+    font-size: 2.3rem;
     box-shadow: 0em 0.063em 0.625em rgba(0, 0, 0, 0.3);
     z-index: 10;
 }
 
 .btn-wsp:hover {
-    text-decoration: none;
     color: #0df053;
     background-color: #fff;
     cursor: pointer;
@@ -1181,6 +1180,7 @@ input {
         right: 1em;
         font-size: 35pt;
         border-radius: 3.125em;
+        z-index: 10;
     }
 
 }
