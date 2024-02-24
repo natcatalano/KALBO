@@ -6,15 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="DirectTV Agente Autorizado">
   <title>DIRECTV Argentina | Agente Autorizado</title>
-  <link href="style.css" rel='stylesheet' type='text/css'>
+  <link href="style.css" rel='stylesheet' type='text/css'/>
   <link rel="stylesheet" href="./fonts/fontello-a540fdbf/fontello-a540fdbf/css/fontello.css" type="text/css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-  <link href="./fonts/stylesheet.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+  <link href="./fonts/stylesheet.css" rel="stylesheet" type="text/css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
   <script defer src="script.js" type="text/javascript"></script>
   <script src="enviar-correo.php"></script>
@@ -75,7 +74,7 @@
       <p class="subtitulo-formulario">Adquirilo hoy mismo.</p>
       <p class="parrafo-formulario">Llená el siguiente formulario, y un agente se pondrá en contacto para asesorarte a
         la brevedad.</p>
-      <form id="contactForm" action="enviar-correo.php" method="POST">
+      <form id="contactForm" action="http://localhost:5500/enviar-correo.php" method="POST">
         <div class="info">
           <label for="name"></label>
           <input type="text" name="name" id="name" placeholder="Nombre Completo" autocomplete="name" required>
@@ -88,7 +87,7 @@
 
         <div class="info">
           <label for="tel"></label>
-          <input type="tel" name="telefono" id="tel" placeholder="Teléfono" autocomplete="telefono" required>
+          <input type="tel" name="telefono" id="tel" placeholder="Teléfono" autocomplete="on" required>
         </div>
 
         <button type="submit" class="btn-form">Enviar</button>
@@ -369,6 +368,6 @@
   <!--BOTON FLOTANTE WHATSAPP-->
   <a href="https://api.whatsapp.com/send?phone=541178310764" class="btn-wsp" target="_blank"><i
       class="icon-whatsapp"></i></a>
-</body>
+    </body>
 
 </html>

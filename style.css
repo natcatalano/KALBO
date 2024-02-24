@@ -20,6 +20,20 @@ main {
     padding-top: 9.375em;
 }
 
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #012169;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #ffc60b;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid #fff;  /* creates padding around scroll thumb */
+  }
+
 /*SECCION HEADER*/
 .header-top {
     display: flex;
