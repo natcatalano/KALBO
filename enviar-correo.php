@@ -8,6 +8,9 @@ use PHPMailer\PHPMailer\Exception;
 //Load Composer's autoloader
 require 'vendor/autoload.php';
 
+if (!isset($_POST["name"]) || !isset($_POST["email"]) || !isset($_POST["telefono"])) {
+    die("Es necesario completar todos los datos del formulario");
+}
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
@@ -51,11 +54,17 @@ try {
     );
 
     // Enviar correo electrónico
+    $mail->send();
+    echo 'Mensaje enviado exitosamente';
 
-        $mail->send();
-        echo 'Mensaje enviado exitosamente';
-    } catch (Exception $e) {
-        // Registrar errores en un archivo de registro
-        error_log("Error de envío de email: " . $e->getMessage(), 0);
-        echo "Mensaje no enviado. Por favor intente más tarde.";
-    }
+    // Redirigir a la página de inicio
+    header("Location: index.html");
+    exit; // Asegura que el script se detiene después de la redirección
+
+} catch (Exception $e) {
+    // Registrar errores en un archivo de registro
+    error_log("Error de envío de email: " . $e->getMessage(), 0);
+    echo "El mensaje no fue enviado. Por favor intente más tarde.";
+    header("Location: index.html");
+    exit;
+}

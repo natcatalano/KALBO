@@ -12,9 +12,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Éxito: se ha enviado el formulario y se ha recibido una respuesta del servidor
                     console.log(xhr.responseText); // Muestra la respuesta del servidor en la consola
                     limpiarCampos(); // Limpiar los campos del formulario
+                    alert('El mensaje se ha enviado exitosamente.');
                 } else {
                     // Error: se produjo un problema al enviar el formulario
                     console.error('Error al enviar el formulario.');
+                    alert('Ha ocurrido un error al enviar el mensaje. Por favor, inténtelo de nuevo.');
                 }
             }
         };
